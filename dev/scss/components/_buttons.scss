@@ -1,0 +1,22 @@
+/* =============
+    Buttons
+============= */
+button {
+	background-color: $green;
+	border: none;
+	border-radius: 10px;
+	color: $lightblue;
+	cursor: pointer;
+	font-size: rem-calc(24);
+	font-variation-settings: "wght"600;
+	font-weight: 600;
+	padding: 10px;
+	transition: 0.25s;
+	&:hover {
+		background-color: $green-button;
+	}
+	@include md {
+		font-size: rem-calc(24);
+		padding: 10px 40px;
+	}
+}

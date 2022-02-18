@@ -1,0 +1,7 @@
+<svg width="146" height="40" viewBox="0 0 146 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="search-bar">
+<circle id="search-bar-closed" cx="99.6443" cy="20" r="7.92274" stroke="#C8F8D6" stroke-width="3"/>
+<path id="search-bar-line" d="M106.073 26.5663L111.661 32.3715" stroke="#C8F8D6" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="search-bar-open" d="M43.7615 12.0773H99.6443C104.02 12.0773 107.567 15.6244 107.567 20C107.567 24.3756 104.02 27.9227 99.6443 27.9227H43.7615C39.3859 27.9227 35.8388 24.3756 35.8388 20C35.8388 15.6244 39.3859 12.0773 43.7615 12.0773Z" stroke="#C8F8D6" stroke-width="3"/>
+</g>
+</svg>

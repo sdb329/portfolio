@@ -1,0 +1,7 @@
+<svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="ocean-clip">
+<path id="wave1" d="M6.08413 19.1089C8.73852 19.1089 9.19422 18.1345 10.4222 16.9064C11.6503 15.6784 13.0696 15.8163 13.6258 16.0388C13.381 16.0166 12.9183 16.1589 13.0251 16.9064C13.1586 17.8408 14.3149 19.1089 16.6893 19.1089" stroke="#C8F8D6" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="wave2" d="M16.6893 19.1089C19.3437 19.1089 19.7994 18.1345 21.0274 16.9064C22.2554 15.6784 23.6748 15.8163 24.2309 16.0388C23.9862 16.0166 23.5235 16.1589 23.6303 16.9064C23.7637 17.8408 24.92 19.1089 27.2944 19.1089" stroke="#C8F8D6" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<ellipse id="clipping-mask" cx="16.6893" cy="17.5" rx="9.97429" ry="9.98173" fill="#C4C4C4"/>
+</g>
+</svg>

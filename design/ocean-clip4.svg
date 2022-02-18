@@ -1,0 +1,13 @@
+<svg width="68" height="70" viewBox="0 0 68 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="ocean-clip" clip-path="url(#clip0_10_15)">
+<path id="wave1" d="M10.7347 38.5295C16.5578 38.5295 17.5575 36.3918 20.2515 33.6978C22.9455 31.0038 26.0592 31.3064 27.2793 31.7945C26.7425 31.7457 25.7273 32.058 25.9616 33.6978C26.2544 35.7476 28.791 38.5295 34 38.5295" stroke="#1D334D" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="wave2" d="M34 38.5295C39.8231 38.5295 40.8228 36.3918 43.5168 33.6978C46.2108 31.0038 49.3245 31.3064 50.5446 31.7945C50.0078 31.7457 48.9927 32.058 49.2269 33.6978C49.5198 35.7476 52.0564 38.5295 57.2653 38.5295" stroke="#1D334D" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="wave3" d="M57.7265 38.5295C63.5496 38.5295 64.5493 36.3918 67.2433 33.6978C69.9373 31.0038 73.051 31.3064 74.2711 31.7945C73.7343 31.7457 72.7192 32.058 72.9534 33.6978C73.2462 35.7476 75.7828 38.5295 80.9918 38.5295" stroke="#1D334D" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<ellipse id="clipping-mask" cx="34" cy="35" rx="21.8814" ry="21.8977" fill="#C4C4C4"/>
+</g>
+<defs>
+<clipPath id="clip0_10_15">
+<rect width="68" height="70" fill="white"/>
+</clipPath>
+</defs>
+</svg>
