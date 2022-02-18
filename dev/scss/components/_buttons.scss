@@ -2,18 +2,23 @@
     Buttons
 ============= */
 button {
-	background-color: $green;
-	border: none;
-	border-radius: 10px;
-	color: $lightblue;
+	background-color: $eggshell;
+	border: 1px solid $darkgray;
+	border-radius: 100px;
+	color: $darkgray;
 	cursor: pointer;
 	font-size: rem-calc(24);
-	font-variation-settings: "wght"600;
-	font-weight: 600;
+
+	font-family: 'Noto Serif Display', serif;
+	font-weight: 300;
+
+	// font-variation-settings: "wght"600;
+	// font-weight: 600;
 	padding: 10px;
 	transition: 0.25s;
 	&:hover {
-		background-color: $green-button;
+		background-color: $darkgray;
+		color: $eggshell;
 	}
 	@include md {
 		font-size: rem-calc(24);

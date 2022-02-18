@@ -7,8 +7,18 @@ h1,
 h2,
 h3,
 h4,
-h5 {
-	font-family: 'Dosis', sans-serif;
+h5
+ {
+	
+	font-family: 'Noto Serif Display', serif;
+	font-weight: 400;
+
+}
+
+
+button{
+	font-family: 'Noto Serif Display', serif;
+	font-weight: 100;
 }
 h1,
 h2,
@@ -25,10 +35,9 @@ p {
 }
 p,
 input,
-button,
 address,
 h6 {
-	font-family: 'Karla', sans-serif;
+	font-family: 'Nanum Gothic', sans-serif;
 }
 nav {
 	font-family: 'Karla', sans-serif;
