@@ -43,6 +43,9 @@ export function displayWindowSize(){
         
         })
 
+        gsap.set(".arrow-svg",{
+            alpha: 0
+        })
     
         
     }else{

@@ -1,0 +1,57 @@
+#my-work{
+
+    >h1{
+        margin-bottom: 40px;
+        margin-top: 40px;
+    }
+    #scott-joplin-resize{
+        width: 100vw;
+    }
+
+    ul{
+
+        >li{
+
+            text-align: center;
+            padding: 200px 0px;
+            >div{
+                >img{
+                    width: 100vw;
+                    display: none;
+                }
+            }           
+        }
+        #typography-main{
+           
+            background-color: $pink;
+
+            #scott-joplin-resize{
+                width: 100vw;
+
+            }
+        }
+
+        #branding-main{
+            text-align: center;
+            background-color: $sage;
+
+
+            #scott-joplin-resize{
+                width: 100vw;
+                display: none;
+            }
+        }
+
+        #publications-main{
+            background-color: $tan;
+        }
+
+        #posters-main{
+            background-color: $pink;
+        }
+        
+        #photos-main{
+            background-color: $sage;
+        }
+    }
+}

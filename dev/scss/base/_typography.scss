@@ -44,3 +44,25 @@ nav {
 	font-size: rem-calc(20);
 	font-weight: 400;
 }
+
+
+h1{
+	font-size: rem-calc(50);
+	border: 1px $darkgray solid;
+	color: $darkgray;
+	
+	border-radius: 100px;
+	text-align: center;
+	padding: 15px;
+	// width: 60vw;
+	margin-left: 15vw;
+	margin-right: 15vw;
+	// display: flex;
+	// align-items: center;
+}
+
+h2{
+	font-size: rem-calc(64);
+	font-weight: 300;
+	color: $darkgray;
+}

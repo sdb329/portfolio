@@ -13,6 +13,8 @@ import { menuListners, oceanWavesMove } from "./menu"
 
 
 
+
+
 var burgerButton = document.querySelector("#burger-container");
 
 let canISeeMenu = false;

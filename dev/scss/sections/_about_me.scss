@@ -1,0 +1,67 @@
+#about_me{
+
+    >h1{
+        text-align: center;
+        margin-bottom: 40px;
+        margin-top: 40px;
+    }
+    #intro-colorblock1{
+        background-color: $pink;
+        height: 80px;
+    }
+    #intro-colorblock2{
+        background-color: $sage;
+        height: 80px;
+    }
+    #intro-image{
+        width: 100vw;
+           
+        
+    }
+    #intro-colorblock3{
+        background-color: $tan;
+        height: 80px;
+    }
+    #intro-colorblock4{
+        background-color: $pink;
+        height: 80px;
+    }
+
+    #intro-grid{
+        display: grid;
+        grid-template-areas: ". arrow .";
+        grid-template-columns: auto 40vw auto;
+
+        @include md{
+            grid-template-areas: ". arrow . text .";
+            grid-template-columns: auto 20vw 10vw 40vw auto;
+        }
+     
+
+        #arrow{
+            grid-area: arrow;
+        //  svg{
+        //     font-size: 20px;
+        //  }
+            
+        }
+
+        #intro-text{
+            grid-area: text;
+
+            display: none;
+
+            @include md{
+                display: list-item;
+                list-style-type: none;
+            }
+
+            p{
+                margin-top: 12px;
+                margin-bottom: 12px;
+            }
+        }
+    }
+
+
+}

@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Google Font -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Noto+Serif+Display:wght@100;200;300;400;500&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/db8be9eca2.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Final</title>
+</head>
+
+<body class="body">
+
+    <!-- <header>
+    
+    
+            <div id="navigation-header">
+    
+    
+    
+                <section id="logo-container">
+                 
+                    <h1>Sara Balsamo</h1>
+                </section>
+    
+                <section id="burger-container">
+                   
+                    <svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 102 98">
+                        <g id="burger">
+                            <path id="top" class="burger-lines" d="M87.282 31.478h-64.57c-4.18-1.683-11.284-7.577-6.269-17.695 6.269-12.647 30.037-7.588 31.302 3.478 1.265 11.066-7.698 26.853-25.033 31.596" stroke="#B3ECFF" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path id="bottom" class="burger-lines" d="M87.282 66.522h-64.57c-4.18 1.683-11.284 7.577-6.269 17.695 6.269 12.647 30.037 7.588 31.302-3.478 1.265-11.066-7.698-26.853-25.033-31.596" stroke="#B3ECFF" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path id="middle" class="burger-lines" d="M22.712 49.143h64.57" stroke="#B3ECFF" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+                        </g>
+                      </svg>
+    
+                      
+                </section>
+    
+    
+    
+    
+    
+                    <nav id="nav-container" data-nav="main-navigation">
+                        <div class="nav-flex">.</div>
+                        
+                         <ul>
+         
+                            
+                            <li class="nav-btns-li"></li>
+                            <li class="nav-btns-li"></li>
+                            
+                             <li class="nav-btns-li">
+    
+                                <div id="search-md-flex"  class="stagger-in-nav">
+                        
+                                    <div id="search-flex">
+                         
+                                
+                        
+                        
+                                        <div id="search-bar">
+                                            
+                                           
+                                            <form action="POST" class="search-msg">
+                                                <input type="text"  id="search-message">
+                                                <div id="search-bar-svg">
+                                                    <svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 146 40">
+                                                        <g id="search-bar" stroke="#C8F8D6" stroke-width="3">
+                                                          <circle id="search-bar-closed" cx="99.644" cy="20" r="7.923"/>
+                                                          <path id="search-bar-line" d="m106.073 26.566 5.588 5.805" stroke-linecap="round" stroke-linejoin="round"/>
+                                                          <path id="search-bar-open" d="M43.761 12.077h55.883a7.923 7.923 0 1 1 0 15.846H43.761a7.923 7.923 0 1 1 0-15.846Z"/>
+                                                        </g>
+                                                      </svg>
+                                                </div>
+                                               
+                                            </form>
+                                        </div>
+                        
+                        
+                        
+                                    </div>
+                            
+                                   
+                            
+                                </div>
+                        
+                             </li>      
+                             
+                             
+         
+                            <li class="nav-btns-li">
+                                <button class="nav-btns stagger-in-nav nav-grow">
+                                <svg class="nav-svg-full nav-svg-right" width="68" height="70" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <defs>
+                                        <clipPath id="clipping-mask-1">
+                                            <ellipse  cx="34" cy="35" rx="21.881" ry="21.898" fill="#C4C4C4"/>
+                                        </clipPath>
+    
+                                    </defs>
+                                    <g class="nav-svg" clip-path="url(#clipping-mask-1)">
+                                        <g class="ocean-clip">
+                                            <path class="wave1" d="M10.735 38.53c5.823 0 6.823-2.138 9.517-4.832 2.694-2.694 5.807-2.392 7.027-1.904-.537-.048-1.552.264-1.317 1.904.292 2.05 2.829 4.831 8.038 4.831" stroke="#1D334D" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path class="wave2" d="M34 38.53c5.823 0 6.823-2.138 9.517-4.832 2.694-2.694 5.807-2.392 7.028-1.904-.537-.048-1.552.264-1.318 1.904.293 2.05 2.83 4.831 8.038 4.831" stroke="#1D334D" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path class="wave3" d="M57.727 38.53c5.823 0 6.822-2.138 9.516-4.832s5.808-2.392 7.028-1.904c-.537-.048-1.552.264-1.318 1.904.293 2.05 2.83 4.831 8.039 4.831" stroke="#1D334D" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path class="wave4" d="M80.992 38.53c5.823 0 6.823-2.138 9.517-4.832 2.694-2.694 5.807-2.392 7.028-1.904-.537-.048-1.553.264-1.318 1.904.293 2.05 2.83 4.831 8.038 4.831" stroke="#1D334D" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </g>
+                                      
+                                    </g>
+                                  </svg>
+                                
+                                <span class="nav-label">Why NJ?</span>
+                            
+                                <svg class="nav-svg-full nav-svg-left" width="68" height="70" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <defs>
+                                        <clipPath id="clipping-mask">
+                                            <ellipse  cx="34" cy="35" rx="21.881" ry="21.898" fill="#C4C4C4"/>
+                                        </clipPath>
+    
+                                    </defs>
+                                    <g class="nav-svg" clip-path="url(#clipping-mask)">
+                                        <g class="ocean-clip">
+                                            <path class="wave1" d="M10.735 38.53c5.823 0 6.823-2.138 9.517-4.832 2.694-2.694 5.807-2.392 7.027-1.904-.537-.048-1.552.264-1.317 1.904.292 2.05 2.829 4.831 8.038 4.831" stroke="#1D334D" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path class="wave2" d="M34 38.53c5.823 0 6.823-2.138 9.517-4.832 2.694-2.694 5.807-2.392 7.028-1.904-.537-.048-1.552.264-1.318 1.904.293 2.05 2.83 4.831 8.038 4.831" stroke="#1D334D" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path class="wave3" d="M57.727 38.53c5.823 0 6.822-2.138 9.516-4.832s5.808-2.392 7.028-1.904c-.537-.048-1.552.264-1.318 1.904.293 2.05 2.83 4.831 8.039 4.831" stroke="#1D334D" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path class="wave4" d="M80.992 38.53c5.823 0 6.823-2.138 9.517-4.832 2.694-2.694 5.807-2.392 7.028-1.904-.537-.048-1.553.264-1.318 1.904.293 2.05 2.83 4.831 8.038 4.831" stroke="#1D334D" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </g>
+                                      
+                                    </g>
+                                  </svg>
+    
+    
+                                  
+                            </button>
+                               
+                                
+                                </li>
+                            <li class="nav-btns-li"><button class="nav-btns stagger-in-nav nav-grow">
+                                <svg class="nav-svg-full nav-svg-right" width="68" height="70" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <defs>
+                                        <clipPath id="clipping-mask-2">
+                                            <ellipse  cx="34" cy="35" rx="21.881" ry="21.898" fill="#C4C4C4"/>
+                                        </clipPath>
+    
+                                    </defs>
+                                    <g class="nav-svg" clip-path="url(#clipping-mask-2)">
+                                        <g class="ocean-clip">
+                                            <path class="wave1" d="M10.735 38.53c5.823 0 6.823-2.138 9.517-4.832 2.694-2.694 5.807-2.392 7.027-1.904-.537-.048-1.552.264-1.317 1.904.292 2.05 2.829 4.831 8.038 4.831" stroke="#1D334D" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path class="wave2" d="M34 38.53c5.823 0 6.823-2.138 9.517-4.832 2.694-2.694 5.807-2.392 7.028-1.904-.537-.048-1.552.264-1.318 1.904.293 2.05 2.83 4.831 8.038 4.831" stroke="#1D334D" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path class="wave3" d="M57.727 38.53c5.823 0 6.822-2.138 9.516-4.832s5.808-2.392 7.028-1.904c-.537-.048-1.552.264-1.318 1.904.293 2.05 2.83 4.831 8.039 4.831" stroke="#1D334D" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path class="wave4" d="M80.992 38.53c5.823 0 6.823-2.138 9.517-4.832 2.694-2.694 5.807-2.392 7.028-1.904-.537-.048-1.553.264-1.318 1.904.293 2.05 2.83 4.831 8.038 4.831" stroke="#1D334D" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </g>
+                                      
+                                    </g>
+                                  </svg>
+    
+                                <span class="nav-label">Regions</span>
+    
+                                <svg class="nav-svg-full nav-svg-left" width="68" height="70" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <defs>
+                                        <clipPath id="clipping-mask2">
+                                            <ellipse  cx="34" cy="35" rx="21.881" ry="21.898" fill="#C4C4C4"/>
+                                        </clipPath>
+    
+                                    </defs>
+                                    <g class="nav-svg" clip-path="url(#clipping-mask2)">
+                                        <g class="ocean-clip">
+                                            <path class="wave1" d="M10.735 38.53c5.823 0 6.823-2.138 9.517-4.832 2.694-2.694 5.807-2.392 7.027-1.904-.537-.048-1.552.264-1.317 1.904.292 2.05 2.829 4.831 8.038 4.831" stroke="#1D334D" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path class="wave2" d="M34 38.53c5.823 0 6.823-2.138 9.517-4.832 2.694-2.694 5.807-2.392 7.028-1.904-.537-.048-1.552.264-1.318 1.904.293 2.05 2.83 4.831 8.038 4.831" stroke="#1D334D" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path class="wave3" d="M57.727 38.53c5.823 0 6.822-2.138 9.516-4.832s5.808-2.392 7.028-1.904c-.537-.048-1.552.264-1.318 1.904.293 2.05 2.83 4.831 8.039 4.831" stroke="#1D334D" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path class="wave4" d="M80.992 38.53c5.823 0 6.823-2.138 9.517-4.832 2.694-2.694 5.807-2.392 7.028-1.904-.537-.048-1.553.264-1.318 1.904.293 2.05 2.83 4.831 8.038 4.831" stroke="#1D334D" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </g>
+                                    </g>
+                                  </svg>
+                            </button>
+                            
+                            
+                            
+                            </li>
+                            <li class="nav-btns-li"><button class="nav-btns stagger-in-nav nav-grow">
+                                <svg class="nav-svg-full nav-svg-right" width="68" height="70" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <defs>
+                                        <clipPath id="clipping-mask-3">
+                                            <ellipse  cx="34" cy="35" rx="21.881" ry="21.898" fill="#C4C4C4"/>
+                                        </clipPath>
+    
+                                    </defs>
+                                    <g class="nav-svg" clip-path="url(#clipping-mask-3)">
+                                        <g class="ocean-clip">
+                                            <path class="wave1" d="M10.735 38.53c5.823 0 6.823-2.138 9.517-4.832 2.694-2.694 5.807-2.392 7.027-1.904-.537-.048-1.552.264-1.317 1.904.292 2.05 2.829 4.831 8.038 4.831" stroke="#1D334D" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path class="wave2" d="M34 38.53c5.823 0 6.823-2.138 9.517-4.832 2.694-2.694 5.807-2.392 7.028-1.904-.537-.048-1.552.264-1.318 1.904.293 2.05 2.83 4.831 8.038 4.831" stroke="#1D334D" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path class="wave3" d="M57.727 38.53c5.823 0 6.822-2.138 9.516-4.832s5.808-2.392 7.028-1.904c-.537-.048-1.552.264-1.318 1.904.293 2.05 2.83 4.831 8.039 4.831" stroke="#1D334D" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path class="wave4" d="M80.992 38.53c5.823 0 6.823-2.138 9.517-4.832 2.694-2.694 5.807-2.392 7.028-1.904-.537-.048-1.553.264-1.318 1.904.293 2.05 2.83 4.831 8.038 4.831" stroke="#1D334D" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </g>
+                                      
+                                    </g>
+                                  </svg>
+    
+                                <span class="nav-label">Places to Visit</span>
+    
+                                <svg class="nav-svg-full nav-svg-left" width="68" height="70" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <defs>
+                                        <clipPath id="clipping-mask3">
+                                            <ellipse  cx="34" cy="35" rx="21.881" ry="21.898" fill="#C4C4C4"/>
+                                        </clipPath>
+    
+                                    </defs>
+                                    <g class="nav-svg" clip-path="url(#clipping-mask3)">
+                                        <g class="ocean-clip">
+                                            <path class="wave1" d="M10.735 38.53c5.823 0 6.823-2.138 9.517-4.832 2.694-2.694 5.807-2.392 7.027-1.904-.537-.048-1.552.264-1.317 1.904.292 2.05 2.829 4.831 8.038 4.831" stroke="#1D334D" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path class="wave2" d="M34 38.53c5.823 0 6.823-2.138 9.517-4.832 2.694-2.694 5.807-2.392 7.028-1.904-.537-.048-1.552.264-1.318 1.904.293 2.05 2.83 4.831 8.038 4.831" stroke="#1D334D" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path class="wave3" d="M57.727 38.53c5.823 0 6.822-2.138 9.516-4.832s5.808-2.392 7.028-1.904c-.537-.048-1.552.264-1.318 1.904.293 2.05 2.83 4.831 8.039 4.831" stroke="#1D334D" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path class="wave4" d="M80.992 38.53c5.823 0 6.823-2.138 9.517-4.832 2.694-2.694 5.807-2.392 7.028-1.904-.537-.048-1.553.264-1.318 1.904.293 2.05 2.83 4.831 8.038 4.831" stroke="#1D334D" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </g>
+                                    </g>
+                                  </svg>
+                            </button></li>
+                            <li class="nav-btns-li"><button class="nav-btns stagger-in-nav nav-grow">
+                                <svg class="nav-svg-full nav-svg-right" width="68" height="70" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <defs>
+                                        <clipPath id="clipping-mask-4">
+                                            <ellipse  cx="34" cy="35" rx="21.881" ry="21.898" fill="#C4C4C4"/>
+                                        </clipPath>
+    
+                                    </defs>
+                                    <g class="nav-svg" clip-path="url(#clipping-mask-4)">
+                                        <g class="ocean-clip">
+                                            <path class="wave1" d="M10.735 38.53c5.823 0 6.823-2.138 9.517-4.832 2.694-2.694 5.807-2.392 7.027-1.904-.537-.048-1.552.264-1.317 1.904.292 2.05 2.829 4.831 8.038 4.831" stroke="#1D334D" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path class="wave2" d="M34 38.53c5.823 0 6.823-2.138 9.517-4.832 2.694-2.694 5.807-2.392 7.028-1.904-.537-.048-1.552.264-1.318 1.904.293 2.05 2.83 4.831 8.038 4.831" stroke="#1D334D" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path class="wave3" d="M57.727 38.53c5.823 0 6.822-2.138 9.516-4.832s5.808-2.392 7.028-1.904c-.537-.048-1.552.264-1.318 1.904.293 2.05 2.83 4.831 8.039 4.831" stroke="#1D334D" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path class="wave4" d="M80.992 38.53c5.823 0 6.823-2.138 9.517-4.832 2.694-2.694 5.807-2.392 7.028-1.904-.537-.048-1.553.264-1.318 1.904.293 2.05 2.83 4.831 8.038 4.831" stroke="#1D334D" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </g>
+                                      
+                                    </g>
+                                  </svg>
+    
+                                <span class="nav-label">Places to Stay</span>
+    
+                                <svg class="nav-svg-full nav-svg-left" width="68" height="70" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <defs>
+                                        <clipPath id="clipping-mask4">
+                                            <ellipse  cx="34" cy="35" rx="21.881" ry="21.898" fill="#C4C4C4"/>
+                                        </clipPath>
+    
+                                    </defs>
+                                    <g class="nav-svg" clip-path="url(#clipping-mask4)">
+                                        <g class="ocean-clip">
+                                            <path class="wave1" d="M10.735 38.53c5.823 0 6.823-2.138 9.517-4.832 2.694-2.694 5.807-2.392 7.027-1.904-.537-.048-1.552.264-1.317 1.904.292 2.05 2.829 4.831 8.038 4.831" stroke="#1D334D" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path class="wave2" d="M34 38.53c5.823 0 6.823-2.138 9.517-4.832 2.694-2.694 5.807-2.392 7.028-1.904-.537-.048-1.552.264-1.318 1.904.293 2.05 2.83 4.831 8.038 4.831" stroke="#1D334D" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path class="wave3" d="M57.727 38.53c5.823 0 6.822-2.138 9.516-4.832s5.808-2.392 7.028-1.904c-.537-.048-1.552.264-1.318 1.904.293 2.05 2.83 4.831 8.039 4.831" stroke="#1D334D" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path class="wave4" d="M80.992 38.53c5.823 0 6.823-2.138 9.517-4.832 2.694-2.694 5.807-2.392 7.028-1.904-.537-.048-1.553.264-1.318 1.904.293 2.05 2.83 4.831 8.038 4.831" stroke="#1D334D" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </g>
+                                    </g>
+                                  </svg>
+                            </button></li>
+                            <li class="nav-btns-li"><button class="nav-btns stagger-in-nav nav-grow">
+                                <svg class="nav-svg-full nav-svg-right" width="68" height="70" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <defs>
+                                        <clipPath id="clipping-mask-5">
+                                            <ellipse  cx="34" cy="35" rx="21.881" ry="21.898" fill="#C4C4C4"/>
+                                        </clipPath>
+    
+                                    </defs>
+                                    <g class="nav-svg" clip-path="url(#clipping-mask-5)">
+                                        <g class="ocean-clip">
+                                            <path class="wave1" d="M10.735 38.53c5.823 0 6.823-2.138 9.517-4.832 2.694-2.694 5.807-2.392 7.027-1.904-.537-.048-1.552.264-1.317 1.904.292 2.05 2.829 4.831 8.038 4.831" stroke="#1D334D" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path class="wave2" d="M34 38.53c5.823 0 6.823-2.138 9.517-4.832 2.694-2.694 5.807-2.392 7.028-1.904-.537-.048-1.552.264-1.318 1.904.293 2.05 2.83 4.831 8.038 4.831" stroke="#1D334D" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path class="wave3" d="M57.727 38.53c5.823 0 6.822-2.138 9.516-4.832s5.808-2.392 7.028-1.904c-.537-.048-1.552.264-1.318 1.904.293 2.05 2.83 4.831 8.039 4.831" stroke="#1D334D" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path class="wave4" d="M80.992 38.53c5.823 0 6.823-2.138 9.517-4.832 2.694-2.694 5.807-2.392 7.028-1.904-.537-.048-1.553.264-1.318 1.904.293 2.05 2.83 4.831 8.038 4.831" stroke="#1D334D" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </g>
+                                      
+                                    </g>
+                                  </svg>
+                                 
+                                <span class="nav-label" id="dns-text">Dining and Shopping</span>
+    
+                                <svg class="nav-svg-full nav-svg-left" width="68" height="70" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <defs>
+                                        <clipPath id="clipping-mask5">
+                                            <ellipse  cx="34" cy="35" rx="21.881" ry="21.898" fill="#C4C4C4"/>
+                                        </clipPath>
+    
+                                    </defs>
+                                    <g class="nav-svg" clip-path="url(#clipping-mask5)">
+                                        <g class="ocean-clip">
+                                            <path class="wave1" d="M10.735 38.53c5.823 0 6.823-2.138 9.517-4.832 2.694-2.694 5.807-2.392 7.027-1.904-.537-.048-1.552.264-1.317 1.904.292 2.05 2.829 4.831 8.038 4.831" stroke="#1D334D" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path class="wave2" d="M34 38.53c5.823 0 6.823-2.138 9.517-4.832 2.694-2.694 5.807-2.392 7.028-1.904-.537-.048-1.552.264-1.318 1.904.293 2.05 2.83 4.831 8.038 4.831" stroke="#1D334D" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path class="wave3" d="M57.727 38.53c5.823 0 6.822-2.138 9.516-4.832s5.808-2.392 7.028-1.904c-.537-.048-1.552.264-1.318 1.904.293 2.05 2.83 4.831 8.039 4.831" stroke="#1D334D" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path class="wave4" d="M80.992 38.53c5.823 0 6.823-2.138 9.517-4.832 2.694-2.694 5.807-2.392 7.028-1.904-.537-.048-1.553.264-1.318 1.904.293 2.05 2.83 4.831 8.038 4.831" stroke="#1D334D" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </g>
+                                    </g>
+                                  </svg>
+                            </button></li>
+    
+                            <li class="nav-btns-li"></li>
+                            <li class="nav-btns-li"></li>
+    
+         
+         
+         
+         
+                           
+                         </ul>
+                         <div class="nav-flex">.</div>
+                     </nav>
+    
+               
+    
+                
+            </div>
+    
+    
+      
+    
+    
+    </header> -->
+
+    <section id="posters-sub">
+    
+        <h1>posters</h1>
+      
+        <!-- _________________________________________________________________ -->
+      
+      
+        <div>
+            <h2>color block portrait</h2>
+            <h3>freelance, summer 2021</h3>
+      
+         <p>This poster was a commission where the client requested a poster that would celebrate women’s bodies. The purpose of the poster was to be inclusive and representative. There are currently 2 other posters that are in the process of being made for the series that the client requested.</p>
+        </div>
+      
+        <ul>
+      
+      
+        <li>
+            <img src="img/posters/portrait/portrait.png" alt="">
+        </li>
+        <li>
+            <img src="img/posters/portrait/portrait-mockup.png" alt="">
+        </li>
+         
+      </ul>
+      
+      
+      
+      
+      <!-- _________________________________________________________________ -->
+      
+      
+      
+      <div>
+        <h2>quebec city travel poster</h2>
+        <h3>computer imaging, fall 2020</h3>
+    
+     <p>This is a travel poster for Quebec City in Canada. In combining separate iconic elements that clearly represent  Quebec, this poster is able to communicate and engage tourists looking for  a new vacation spot.</p>
+    </div>
+    
+    <ul>
+    
+    
+    <li>
+        <img src="img/posters/quebec/quebec.png" alt="">
+    </li>
+    <li>
+        <img src="img/posters/quebec/quebec-mockup.png" alt="">
+    </li>
+     
+    </ul>
+     
+    
+    <!-- _________________________________________________________________ -->
+      
+      
+      
+    <div>
+        <h2>zaha hadid architecture poster</h2>
+        <h3>visual communications I, fall 2020</h3>
+    
+     <p>This poster was a design for an exhibition of architect Zaha Hadid’s work. The poster was meant to mimic Hadid’s previous projects to reflect the individual works of the artist.</p>
+    </div>
+    
+    <ul>
+    
+    
+    <li>
+        <img src="img/posters/zaha-hadid/zaha-hadid.png" alt="">
+    </li>
+    <li>
+        <img src="img/posters/zaha-hadid/zaha-hadid-mockup.png" alt="">
+    </li>
+     
+    </ul>
+      
+      </section>
+
+    <footer id="footer" class="move-nav">
+       <h1>LET'S CONNECT!</h1>
+    </footer>
+
+
+</body>
+
+ <!-- jQuery -->
+ <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
+
+ <!-- Greensock -->
+ <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script> -->
+
+ <script src="js/scripts-min.js"></script>
+
+</html>
