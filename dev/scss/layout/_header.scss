@@ -2,7 +2,7 @@
     Header
 ============= */
 header {
-	background-color: $darkblue;
+	background-color: none;
 	left: 0;
 	position: fixed;
 	top: 0;
@@ -11,7 +11,13 @@ header {
 
 
 
-	
+	#logo-container{
+		>h1{
+			font-size: 15px;
+			text-decoration: none;
+			border: none;
+		}
+	}
 
 
 	#navigation-header {
@@ -63,13 +69,13 @@ header {
 		#burger-container {
 			grid-area: burger;
 			z-index: 5000;
-			background-color: $darkblue;
+			background-color: none;
 			padding-right: 16px;
 			@include lg {
 				display: none !important;
 			}
 			svg {
-				color: $lightgreen;
+				
 				cursor: pointer;
 				font-size: rem-calc(50);
 			}

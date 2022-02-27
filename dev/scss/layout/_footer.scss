@@ -7,5 +7,62 @@
 	>h1{
 		margin-bottom: 40px;
         margin-top: 40px;
+		background-color: $tan;
+	}
+
+
+>div{
+
+	text-align: center;
+
+		>form{
+			#input-name{
+
+				width: 27vw;
+				background-color: $pink;
+				
+			}
+			#input-email{
+				width: 27vw;
+				background-color: $sage;
+			}
+			#input-subject{
+				width: 60vw;
+				background-color: $tan;
+			}
+			#input-submit{
+				width: 60vw;
+				background-color: $sage;
+
+				&:hover{
+					background-color: $tan;
+					transition: .5s;
+				}
+			}
+
+
+		}
+
+}
+	
+
+	input{
+		background-color: none;
+		border: 1px $darkgray solid;
+		border-radius: 10px;
+		padding: 10px;
+		color: $darkgray;
+		margin: 8px;
+
+		
+	}
+
+	textarea{
+		background-color: $pink;
+		border: 1px $darkgray solid;
+		border-radius: 10px;
+		padding:10px 10px 50px;
+		margin: 8px;	
+		width: 60vw;
 	}
 }
