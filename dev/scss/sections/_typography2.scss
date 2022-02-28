@@ -1,0 +1,151 @@
+#typpgraphy-sub{
+
+    @include xl{
+        display: grid;
+        grid-template-areas: ". sub2 .";
+        grid-template-columns: auto 1200px auto;
+
+        
+    }
+
+    div{
+        grid-area: sub2;
+
+        h1{
+            background-color: $pink;
+            margin: 20px 60px;
+
+            @include lg{
+                font-size: rem-calc(90);
+            }
+        }
+    
+            h2{
+                font-size: rem-calc(40);
+                padding: 20px 40px;
+                text-align: center;
+                font-weight: 400;
+                border-top: 1px $darkgray solid;
+                border-bottom: 1px $darkgray solid;
+                margin: 0px 16px;
+                background-color: $sage;
+                border-radius: 20px;
+
+                @include lg{
+                    font-size: rem-calc(60);
+                }
+            }
+    
+            h3{
+                padding: 16px 40px;
+
+                @include lg{
+                    padding: 20px 20vw;
+                    font-size: rem-calc(30);
+                }
+
+                @include xl{
+                    padding: 20px 90px;
+
+                }
+            }
+            p{
+                padding: 0px 40px; 
+
+                @include lg{
+                    padding: 8px 20vw;
+                    font-size: rem-calc(20);
+                }
+
+                @include xl{
+                    padding: 8px 90px;
+
+                }
+
+
+            }
+            >div{
+    
+                >ul{
+                    display: flex;
+                    flex-wrap: wrap;
+                    flex-direction: row;
+                    justify-content: center;
+            
+            
+                    li{
+                        // width: 40vw;
+    
+                      
+                   
+                        img{
+                            width: 90vw;
+                            padding: 16px;
+    
+                            @include md{
+                                width: 40vw;
+                            }
+
+                            @include xl{
+                                width: 500px;
+                            }
+    
+                            
+                        }
+    
+                        
+                    }
+                   
+                    .full-banner{
+                        display: none;
+                        position: relative;
+                    }
+                }
+    
+                #gif-sj-flex{
+                    display: flex;
+                    flex-wrap: wrap;
+                    flex-direction: row;
+                    justify-content: center;
+    
+                    #gif-sj{
+    
+                     
+        
+                        width: 90vw;
+                        padding: 16px;
+        
+        
+        
+                    }
+    
+                }
+                
+                #soah-video{
+    
+                    // display: grid;
+                    // grid-template-areas: ". video .";
+                    // grid-template-columns: 25px auto 16px;
+                    display: flex;
+                    flex-wrap: wrap;
+                    flex-direction: row;
+                    justify-content: center;
+                    #soah-video2{
+                        grid-area: video;
+                        width: 90vw;
+                        padding: 16px;
+                        text-align: center;
+                    }
+                    
+                }
+    
+            }
+
+
+    }
+
+    
+
+     
+   
+}
