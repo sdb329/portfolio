@@ -2,56 +2,35 @@
     Header
 ============= */
 header {
-	background-color: none;
+	// background-color: $darkblue;
 	left: 0;
-	position: fixed;
+	// position: fixed;
 	top: 0;
 	width: 100%;
-	z-index:1000;
-
-
-
-	#logo-container{
-		>h1{
-			font-size: 15px;
-			text-decoration: none;
-			border: none;
-		}
-	}
-
-
 	#navigation-header {
 		display: grid;
-		grid-template-areas: "survival search burger"
-            "nav nav nav";
-		grid-template-columns: auto 40% 15%;
+		grid-template-areas: "survival burger"
+            "nav nav";
+		grid-template-columns: 90% auto;
+		padding-left: 16px;
 		padding-top: 32px;
-
-		@include md {
-			grid-template-columns: 30% auto 100px;
-
-		}
-
 		@include lg {
-			grid-template-areas: "survival  nav";
-			grid-template-columns: 25% auto;
+			grid-template-areas: "survival nav";
+			grid-template-columns: 35% auto;
 			padding-right: 16px;
-			padding-top: 0px;
-			
 		}
 		@include xl {
 			grid-template-areas: "survival nav";
-			grid-template-columns: 18% auto;
+			grid-template-columns: 40% auto;
 		}
 		#logo-container {
 			grid-area: survival;
-			padding-left: 16px;
-			z-index: 40;
 			button {
 				background-color: $lightblue;
 				color: $darkblue;
 				display: inline-block;
 				font-size: rem-calc(18);
+				padding: 10px 20px;
 				transition: 0.25s;
 				&:hover {
 					background-color: $darkblue;
@@ -59,145 +38,99 @@ header {
 					color: $lightblue;
 				}
 			}
-			@include lg{
-				padding-top: 40px;
-			}
 		}
-
-		
-
 		#burger-container {
 			grid-area: burger;
-			z-index: 5000;
-			background-color: none;
-			padding-right: 16px;
 			@include lg {
 				display: none !important;
 			}
-			svg {
-				
+			i {
+				color: $lightgreen;
 				cursor: pointer;
 				font-size: rem-calc(50);
 			}
 		}
-
 		#nav-container {
-
-			position: fixed;
-			top: 100px;
+			// background-color: $darkblue;
+			display: none;
 			grid-area: nav;
-			width: 100vw;
-			height: 100vh;
-			z-index: 0;
-			@include md {
-				width: 70vw;
-				right: 0px;
-			}
+			padding: 20px 10px 10px;
 			@include lg {
-				width: 100%;
-				height: fit-content;
-				background-color: $darkblue;
-				position: static;
-				z-index: 7000;
-
-
-
-
-		
+				// background-color: $darkblue;
+				display: block !important;
 			}
 		}
 	}
-
-	.nav-btns{
-		@include lg{
-			padding-right: 0px;
-			margin-bottom: 30px;
+	#search-md-flex {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		padding-top: 100px;
+		@include lg {
+			padding-top: 100px;
 		}
-
 	}
-
 	#search-flex {
-		@include lg{
-			padding-right: 10px;
-		}
-		.search-flex-center{
-			color: transparent;
-		}
-
-
+		display: flex;
+		justify-content: center;
 		#search-bar {
-
-			background-color: transparent;
-			padding-bottom: 40px;
-			width: 100%;
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			
-
-			
-			@include md{
-				padding-right: 180px;
-			
-				
-			}
-			@include lg{
-				padding-right: 0px;
-				padding-bottom: 0px;
-				padding-left: 10px;
-			}
-
-
+			background-color: $white;
+			border: 4px $green solid;
+			border-radius: 40px;
+			margin: 10px;
+			width: 90%;
 			>form {
-
-				padding: 0px;
-
-				display: grid;
-		grid-template-areas: "search-bar-on-top";
-		grid-template-columns: auto;
-
-		@include lg{
-			margin-left: 50px;
-			padding-top: 8px;
-		}
-				#search-message{
-				margin-bottom: 50px;
-				margin-right: 20px;
-				margin-left: 20px;
-				grid-area: search-bar-on-top;
-				z-index: 200;
-			
+				padding: 5px;
+				>i {
+					color: $green;
+					font-size: rem-calc(24);
 				}
-				#search-bar-svg{
-					
-					grid-area: search-bar-on-top;
-					
-				
-				}
-				@include md{
-					padding: 0px;
-				}		
-				@include lg{
-					font-size: rem-calc(12);
-				}			
 				>input {
 					background-color: transparent;
 					border: none;
-					text-decoration: none;
 					border-radius: 0px;
-					color: $lightblue;
+					color: $green;
+					font-size: rem-calc(24);
 					font-variation-settings: "wght"600;
 					font-weight: 300;
-				
-
 					&::placeholder {
-						color: white;
+						color: $green;
 					}
 					&:-ms-input-placeholder {
-						color: $lightblue;
-						font-size: rem-calc(24);
+						color: $green;
+					}
+					&::-ms-input-placeholder {
+						color: $green;
 					}
 				}
+			}
+		}
+	}
+	#header-button {
+		display: flex;
+		justify-content: center;
+		>button {
+			border-radius: 0px;
+			flex-grow: 1;
+		}
+	}
+	@include md {
+		#search-md-flex {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			#header-button {
+				flex-grow: .2;
+				order: 1;
+				padding-left: 16px;
+				>button {
+					border-radius: 20px;
+					margin-bottom: 10px;
+				}
+			}
+			#search-flex {
+				flex-grow: .2;
+				order: 2;
 			}
 		}
 	}

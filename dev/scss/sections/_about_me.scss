@@ -5,29 +5,19 @@
         margin-bottom: 40px;
         margin-top: 40px;
         background-color: $pink;
+
+        @include lg{
+            font-size: rem-calc(90);
+        }
     }
-    #intro-colorblock1{
-        background-color: $pink;
-        height: 80px;
-    }
-    #intro-colorblock2{
-        background-color: $sage;
-        height: 80px;
-    }
+   
+
     #intro-image{
         width: 100vw;
            
         
     }
-    #intro-colorblock3{
-        background-color: $tan;
-        height: 80px;
-    }
-    #intro-colorblock4{
-        background-color: $pink;
-        height: 80px;
-    }
-
+   
     #intro-grid{
         display: grid;
         grid-template-areas: ". arrow .";
@@ -53,13 +43,26 @@
             display: none;
 
             @include md{
-                display: list-item;
+                display: grid;
                 list-style-type: none;
+                justify-content: space-between;
+
+                padding: 40px 0px;
+            }
+            @include lg{
+                padding: 100px 0px;
             }
 
             p{
                 margin-top: 12px;
                 margin-bottom: 12px;
+
+                @include lg{
+                    
+                    font-size: rem-calc(20);
+                }
+
+              
             }
         }
     }

@@ -6,6 +6,10 @@
         margin-bottom: 40px;
         margin-top: 40px;
         background-color: $sage;
+
+        @include lg{
+            font-size: rem-calc(90);
+        }
     }
  
     .titles-h2-main{
@@ -31,10 +35,7 @@
                 display: none;
             }
 
-            .my-work-img2{
-                // width: 100vw;
-                display: none;
-            }
+        
           .click-me-svg{
             //   background-color: green;
             width: 37vw;
@@ -141,12 +142,21 @@
                     grid-template-areas: " left . right";
                     grid-template-columns: auto 16px 70vw;
 
-                    .color2{
-                        background-color: $sage;
-                        height: 600px;
-                        width: 1200px;
+                    .color-flex{
+                       
                         text-align: right;
                         grid-area: right;
+
+                        text-align: right;
+
+                        display: flex;
+                        justify-content: flex-end;
+
+                        .color2{
+                            background-color: $sage;
+                            height: 600px;
+                            width: 1200px;
+                        }
                     }
                     .type-words-total{
                         grid-area: right;
@@ -248,11 +258,21 @@
                     grid-template-areas: " left . right";
                     grid-template-columns: auto 16px 70vw;
 
-                    .color4{
-                        background-color: $pink;
-                        height: 600px;
-                        width: 1200px;
+                    .color-flex{
+                       
+                        text-align: right;
                         grid-area: right;
+
+                        text-align: right;
+
+                        display: flex;
+                        justify-content: flex-end;
+
+                        .color4{
+                            background-color: $pink;
+                            height: 600px;
+                            width: 1200px;
+                        }
                     }
                     .type-words-total{
                         grid-area: right;
