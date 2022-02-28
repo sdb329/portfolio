@@ -2,6 +2,23 @@
     Footer
 ============= */
 #footer {
+	@include xl {
+		display: grid;
+		grid-template-areas: ". contain .";
+		grid-template-columns: auto 1200px auto;
+
+
+	}
+
+	>div{
+
+		@include xl {
+			grid-area: contain;
+	
+	
+		}
+
+	
 	
 
 	>h1{
@@ -24,15 +41,29 @@
 
 				width: 27vw;
 				background-color: $pink;
+
+				@include xl{
+					width: 1200px;
+		
+				}
 				
 			}
 			#input-email{
 				width: 27vw;
 				background-color: $sage;
+
+				@include xl{
+					width: 1200px;
+					
+				}
 			}
 			#input-subject{
 				width: 60vw;
 				background-color: $tan;
+
+				@include xl{
+					width: 1200px;
+				}
 			}
 			#input-submit{
 				width: 60vw;
@@ -41,6 +72,10 @@
 				&:hover{
 					background-color: $tan;
 					transition: .5s;
+				}
+				@include xl{
+					width: 1220px;
+					margin: 8px;
 				}
 			}
 
@@ -58,6 +93,9 @@
 		color: $darkgray;
 		margin: 8px;
 
+		@include xl{
+			width: 1200px;
+		}
 		
 	}
 
@@ -68,5 +106,11 @@
 		padding:10px 10px 50px;
 		margin: 8px;	
 		width: 60vw;
+
+		@include xl{
+			width: 1200px;
+		}
 	}
+
+}
 }

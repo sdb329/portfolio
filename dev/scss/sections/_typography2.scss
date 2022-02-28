@@ -18,6 +18,10 @@
             @include lg{
                 font-size: rem-calc(90);
             }
+            @include xl{
+                margin-left: -5vw;
+                margin-right: -5vw;
+            }
         }
     
             h2{

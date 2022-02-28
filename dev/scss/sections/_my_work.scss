@@ -1,16 +1,34 @@
 #my-work{
 
 
-
-    >h1{
-        margin-bottom: 40px;
-        margin-top: 40px;
-        background-color: $sage;
-
-        @include lg{
-            font-size: rem-calc(90);
+    >div{
+        @include xl {
+            display: grid;
+            grid-template-areas: ". contain .";
+            grid-template-columns: auto 1200px auto;
+    
+    
         }
+       
+        >h1{
+            margin-bottom: 40px;
+            margin-top: 40px;
+            background-color: $sage;
+    
+            @include lg{
+                font-size: rem-calc(90);
+            }
+
+            @include xl {
+                grid-area: contain;
+        
+        
+            }
+        }
+
     }
+
+   
  
     .titles-h2-main{
         @include lg{
@@ -69,6 +87,8 @@
                 // position: sticky;
               }
           }
+
+        
           
 
          
@@ -92,7 +112,7 @@
                     .color1{
                         background-color: $pink;
                         height: 600px;
-                        width: 1200px;
+                        // width: 1200px;
                         grid-area: left;
                     }
                     .type-words-total{
@@ -106,8 +126,20 @@
 
 
                         .click-me-svg{
-                            margin-bottom: -250px
+                            margin-bottom: -250px;
+                            
+
+                        
                         }
+                        @include xl{
+                            .click-me-svg{
+                                //   background-color: green;
+                                width: 500px;
+                                margin-bottom: -350px;
+                                // position: sticky;
+                              }
+                            
+                          }
                     }
 
                     .my-work-img{
@@ -123,6 +155,13 @@
                        .img-resize{
                         padding: 0px;
                            width: 200px;
+                       }
+
+                       @include xl{
+                        .img-resize{
+                            padding: 0px;
+                               width: 400px;
+                           }
                        }
                     }
                 }
@@ -151,11 +190,12 @@
 
                         display: flex;
                         justify-content: flex-end;
+                        background-color: $sage;
 
                         .color2{
                             background-color: $sage;
                             height: 600px;
-                            width: 1200px;
+                            // width: 1200px;
                         }
                     }
                     .type-words-total{
@@ -171,6 +211,16 @@
                         .click-me-svg{
                             margin-bottom: -250px
                         }
+                        @include xl{
+                            .click-me-svg{
+                                //   background-color: green;
+                           
+                                width: 500px;
+                                margin-bottom: -350px;
+                                // position: sticky;
+                              }
+                            
+                          }
                     }
 
                     .my-work-img{
@@ -186,6 +236,12 @@
                        .img-resize{
                         padding: 0px;
                            width: 200px;
+                       }
+                       @include xl{
+                        .img-resize{
+                            padding: 0px;
+                               width: 400px;
+                           }
                        }
                     }
                 }
@@ -209,7 +265,7 @@
                     .color3{
                         background-color: $tan;
                         height: 600px;
-                        width: 1200px;
+                        // width: 1200px;
                         grid-area: left;
                     }
                     .type-words-total{
@@ -225,6 +281,16 @@
                         .click-me-svg{
                             margin-bottom: -250px
                         }
+                        @include xl{
+                            .click-me-svg{
+                                //   background-color: green;
+                           
+                                width: 500px;
+                                margin-bottom: -350px;
+                                // position: sticky;
+                              }
+                            
+                          }
                     }
 
                     .my-work-img{
@@ -240,6 +306,12 @@
                        .img-resize{
                         padding: 0px;
                            width: 200px;
+                       }
+                       @include xl{
+                        .img-resize{
+                            padding: 0px;
+                               width: 400px;
+                           }
                        }
                     }
                 }
@@ -267,11 +339,12 @@
 
                         display: flex;
                         justify-content: flex-end;
+                        background-color: $pink;
 
                         .color4{
                             background-color: $pink;
                             height: 600px;
-                            width: 1200px;
+                            // width: 1200px;
                         }
                     }
                     .type-words-total{
@@ -287,6 +360,16 @@
                         .click-me-svg{
                             margin-bottom: -250px
                         }
+                        @include xl{
+                            .click-me-svg{
+                                //   background-color: green;
+                           
+                                width: 500px;
+                                margin-bottom: -350px;
+                                // position: sticky;
+                              }
+                            
+                          }
                     }
 
                     .my-work-img{
@@ -302,6 +385,12 @@
                        .img-resize{
                         padding: 0px;
                            width: 200px;
+                       }
+                       @include xl{
+                        .img-resize{
+                            padding: 0px;
+                               width: 400px;
+                           }
                        }
                     }
                 }
@@ -324,7 +413,7 @@
                     .color5{
                         background-color: $sage;
                         height: 600px;
-                        width: 1200px;
+                        // width: 1200px;
                         grid-area: left;
                     }
                     .type-words-total{
@@ -340,6 +429,16 @@
                         .click-me-svg{
                             margin-bottom: -250px
                         }
+                        @include xl{
+                            .click-me-svg{
+                                //   background-color: green;
+                           
+                                width: 500px;
+                                margin-bottom: -350px;
+                                // position: sticky;
+                              }
+                            
+                          }
                     }
 
                     .my-work-img{
@@ -355,6 +454,12 @@
                        .img-resize{
                         padding: 0px;
                            width: 200px;
+                       }
+                       @include xl{
+                        .img-resize{
+                            padding: 0px;
+                               width: 400px;
+                           }
                        }
                     }
                 }

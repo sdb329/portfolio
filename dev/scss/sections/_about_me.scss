@@ -1,71 +1,108 @@
-#about_me{
+#about_me {
 
-    >h1{
-        text-align: center;
-        margin-bottom: 40px;
-        margin-top: 40px;
-        background-color: $pink;
-
-        @include lg{
-            font-size: rem-calc(90);
-        }
-    }
-   
-
-    #intro-image{
-        width: 100vw;
-           
-        
-    }
-   
-    #intro-grid{
+    @include xl {
         display: grid;
-        grid-template-areas: ". arrow .";
-        grid-template-columns: auto 40vw auto;
+        grid-template-areas: ". contain .";
+        grid-template-columns: auto 1200px auto;
 
-        @include md{
-            grid-template-areas: ". arrow . text .";
-            grid-template-columns: auto 20vw 10vw 40vw auto;
+
+    }
+   
+    >div {
+        @include xl{
+
+            grid-area: contain;
+
+
         }
-     
+       
+        >h1 {
+            text-align: center;
+            margin-bottom: 40px;
+            margin-top: 40px;
+            background-color: $pink;
 
-        #arrow{
-            grid-area: arrow;
-        //  svg{
-        //     font-size: 20px;
-        //  }
-            
-        }
-
-        #intro-text{
-            grid-area: text;
-
-            display: none;
-
-            @include md{
-                display: grid;
-                list-style-type: none;
-                justify-content: space-between;
-
-                padding: 40px 0px;
-            }
-            @include lg{
-                padding: 100px 0px;
+            @include lg {
+                font-size: rem-calc(90);
             }
 
-            p{
-                margin-top: 12px;
-                margin-bottom: 12px;
+           
+        }
+         
 
-                @include lg{
-                    
-                    font-size: rem-calc(20);
+
+
+        #intro-image {
+            width: 100vw;
+
+            @include xl {
+                width: 1200px;
+            }
+
+
+        }
+
+        #intro-grid {
+            display: grid;
+            grid-template-areas: ". arrow .";
+            grid-template-columns: auto 40vw auto;
+
+            @include md {
+                grid-template-areas: ". arrow . text .";
+                grid-template-columns: auto 20vw 10vw 40vw auto;
+            }
+
+            @include xl{
+                grid-template-areas: ". arrow . text .";
+                grid-template-columns: auto 472px 20px 708px auto;
+            }
+
+
+            #arrow {
+                grid-area: arrow;
+                //  svg{
+                //     font-size: 20px;
+                //  }
+
+            }
+
+            #intro-text {
+                grid-area: text;
+
+                display: none;
+
+                @include md {
+                    display: grid;
+                    list-style-type: none;
+                    justify-content: space-between;
+
+                    padding: 40px 0px;
                 }
 
-              
+                @include lg {
+                    padding: 100px 0px;
+                }
+                @include xl {
+                    padding: 200px 0px;
+                }
+
+                p {
+                    margin-top: 12px;
+                    margin-bottom: 12px;
+
+                    @include lg {
+
+                        font-size: rem-calc(20);
+                    }
+                    @include xl {
+
+                        font-size: rem-calc(30);
+                    }
+
+
+                }
             }
         }
     }
-
 
 }

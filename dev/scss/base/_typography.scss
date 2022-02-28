@@ -65,6 +65,11 @@ h1{
 	margin-left: 15vw;
 	margin-right: 15vw;
 	padding: 15px;
+
+	@include xl{
+		margin-left: -5vw;
+		margin-right: -5vw;
+	}
 }
 
 h2{

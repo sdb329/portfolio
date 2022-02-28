@@ -229,6 +229,16 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/deploy\/img\/header\/logo-sb.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/deploy\/img\/header\/logo-sb.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
     "\/deploy\/img\/header\/logo.svg" : {
       "ft" : 2097152,
       "miP" : 0,
@@ -967,6 +977,16 @@
       "plM" : 52780316221407,
       "prP" : 0
     },
+    "\/design\/burger-portfolio2.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/design\/burger-portfolio2.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
     "\/design\/burger.svg" : {
       "ft" : 2097152,
       "miP" : 0,
@@ -1012,6 +1032,16 @@
       "miP" : 0,
       "oA" : 2,
       "oAP" : "\/design\/click-me-circle2.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/design\/logo-sb.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/design\/logo-sb.svg",
       "oF" : 0,
       "opt" : 0,
       "plM" : 52780316221407,

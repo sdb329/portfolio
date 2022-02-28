@@ -431,6 +431,12 @@ h1 {
   margin-right: 15vw;
   padding: 15px;
 }
+@media (min-width: 1200px) {
+  .title-page {
+    margin-left: -5vw;
+    margin-right: -5vw;
+  }
+}
 
 h2 {
   font-size: 4rem;
@@ -539,6 +545,9 @@ header #navigation-header {
 }
 header #navigation-header #logo-container {
   grid-area: survival;
+}
+header #navigation-header #logo-container > a > svg {
+  width: 70px;
 }
 header #navigation-header #logo-container button {
   background-color: #B3ECFF;
@@ -655,40 +664,73 @@ header #header-button > button {
 /* =============
     Footer
 ============= */
-#footer > h1 {
+@media (min-width: 1200px) {
+  #footer {
+    display: grid;
+    grid-template-areas: ". contain .";
+    grid-template-columns: auto 1200px auto;
+  }
+}
+@media (min-width: 1200px) {
+  #footer > div {
+    grid-area: contain;
+  }
+}
+#footer > div > h1 {
   margin-bottom: 40px;
   margin-top: 40px;
   background-color: #E7DFD7;
 }
 @media (min-width: 1024px) {
-  #footer > h1 {
+  #footer > div > h1 {
     font-size: 5.625rem;
   }
 }
-#footer > div {
+#footer > div > div {
   text-align: center;
 }
-#footer > div > form #input-name {
+#footer > div > div > form #input-name {
   width: 27vw;
   background-color: #E3BCBA;
 }
-#footer > div > form #input-email {
+@media (min-width: 1200px) {
+  #footer > div > div > form #input-name {
+    width: 1200px;
+  }
+}
+#footer > div > div > form #input-email {
   width: 27vw;
   background-color: #9CB0A7;
 }
-#footer > div > form #input-subject {
+@media (min-width: 1200px) {
+  #footer > div > div > form #input-email {
+    width: 1200px;
+  }
+}
+#footer > div > div > form #input-subject {
   width: 60vw;
   background-color: #E7DFD7;
 }
-#footer > div > form #input-submit {
+@media (min-width: 1200px) {
+  #footer > div > div > form #input-subject {
+    width: 1200px;
+  }
+}
+#footer > div > div > form #input-submit {
   width: 60vw;
   background-color: #9CB0A7;
 }
-#footer > div > form #input-submit:hover {
+#footer > div > div > form #input-submit:hover {
   background-color: #E7DFD7;
   transition: 0.5s;
 }
-#footer input {
+@media (min-width: 1200px) {
+  #footer > div > div > form #input-submit {
+    width: 1220px;
+    margin: 8px;
+  }
+}
+#footer > div input {
   background-color: none;
   border: 1px #112E3E solid;
   border-radius: 10px;
@@ -696,7 +738,12 @@ header #header-button > button {
   color: #112E3E;
   margin: 8px;
 }
-#footer textarea {
+@media (min-width: 1200px) {
+  #footer > div input {
+    width: 1200px;
+  }
+}
+#footer > div textarea {
   background-color: #E3BCBA;
   border: 1px #112E3E solid;
   border-radius: 10px;
@@ -704,41 +751,69 @@ header #header-button > button {
   margin: 8px;
   width: 60vw;
 }
+@media (min-width: 1200px) {
+  #footer > div textarea {
+    width: 1200px;
+  }
+}
 
-#about_me > h1 {
+@media (min-width: 1200px) {
+  #about_me {
+    display: grid;
+    grid-template-areas: ". contain .";
+    grid-template-columns: auto 1200px auto;
+  }
+}
+@media (min-width: 1200px) {
+  #about_me > div {
+    grid-area: contain;
+  }
+}
+#about_me > div > h1 {
   text-align: center;
   margin-bottom: 40px;
   margin-top: 40px;
   background-color: #E3BCBA;
 }
 @media (min-width: 1024px) {
-  #about_me > h1 {
+  #about_me > div > h1 {
     font-size: 5.625rem;
   }
 }
-#about_me #intro-image {
+#about_me > div #intro-image {
   width: 100vw;
 }
-#about_me #intro-grid {
+@media (min-width: 1200px) {
+  #about_me > div #intro-image {
+    width: 1200px;
+  }
+}
+#about_me > div #intro-grid {
   display: grid;
   grid-template-areas: ". arrow .";
   grid-template-columns: auto 40vw auto;
 }
 @media (min-width: 768px) {
-  #about_me #intro-grid {
+  #about_me > div #intro-grid {
     grid-template-areas: ". arrow . text .";
     grid-template-columns: auto 20vw 10vw 40vw auto;
   }
 }
-#about_me #intro-grid #arrow {
+@media (min-width: 1200px) {
+  #about_me > div #intro-grid {
+    grid-template-areas: ". arrow . text .";
+    grid-template-columns: auto 472px 20px 708px auto;
+  }
+}
+#about_me > div #intro-grid #arrow {
   grid-area: arrow;
 }
-#about_me #intro-grid #intro-text {
+#about_me > div #intro-grid #intro-text {
   grid-area: text;
   display: none;
 }
 @media (min-width: 768px) {
-  #about_me #intro-grid #intro-text {
+  #about_me > div #intro-grid #intro-text {
     display: grid;
     list-style-type: none;
     justify-content: space-between;
@@ -746,28 +821,50 @@ header #header-button > button {
   }
 }
 @media (min-width: 1024px) {
-  #about_me #intro-grid #intro-text {
+  #about_me > div #intro-grid #intro-text {
     padding: 100px 0px;
   }
 }
-#about_me #intro-grid #intro-text p {
+@media (min-width: 1200px) {
+  #about_me > div #intro-grid #intro-text {
+    padding: 200px 0px;
+  }
+}
+#about_me > div #intro-grid #intro-text p {
   margin-top: 12px;
   margin-bottom: 12px;
 }
 @media (min-width: 1024px) {
-  #about_me #intro-grid #intro-text p {
+  #about_me > div #intro-grid #intro-text p {
     font-size: 1.25rem;
   }
 }
+@media (min-width: 1200px) {
+  #about_me > div #intro-grid #intro-text p {
+    font-size: 1.875rem;
+  }
+}
 
-#my-work > h1 {
+@media (min-width: 1200px) {
+  #my-work > div {
+    display: grid;
+    grid-template-areas: ". contain .";
+    grid-template-columns: auto 1200px auto;
+  }
+}
+#my-work > div > h1 {
   margin-bottom: 40px;
   margin-top: 40px;
   background-color: #9CB0A7;
 }
 @media (min-width: 1024px) {
-  #my-work > h1 {
+  #my-work > div > h1 {
     font-size: 5.625rem;
+  }
+}
+@media (min-width: 1200px) {
+  #my-work > div > h1 {
+    grid-area: contain;
   }
 }
 @media (min-width: 1024px) {
@@ -816,7 +913,6 @@ header #header-button > button {
   #my-work ul #typography-main > a .color1 {
     background-color: #E3BCBA;
     height: 600px;
-    width: 1200px;
     grid-area: left;
   }
   #my-work ul #typography-main > a .type-words-total {
@@ -830,6 +926,14 @@ header #header-button > button {
   #my-work ul #typography-main > a .type-words-total .click-me-svg {
     margin-bottom: -250px;
   }
+}
+@media (min-width: 1024px) and (min-width: 1200px) {
+  #my-work ul #typography-main > a .type-words-total .click-me-svg {
+    width: 500px;
+    margin-bottom: -350px;
+  }
+}
+@media (min-width: 1024px) {
   #my-work ul #typography-main > a .my-work-img {
     grid-area: right;
     padding: 0px;
@@ -841,6 +945,12 @@ header #header-button > button {
   #my-work ul #typography-main > a .my-work-img .img-resize {
     padding: 0px;
     width: 200px;
+  }
+}
+@media (min-width: 1024px) and (min-width: 1200px) {
+  #my-work ul #typography-main > a .my-work-img .img-resize {
+    padding: 0px;
+    width: 400px;
   }
 }
 #my-work ul #branding-main {
@@ -862,11 +972,11 @@ header #header-button > button {
     text-align: right;
     display: flex;
     justify-content: flex-end;
+    background-color: #9CB0A7;
   }
   #my-work ul #branding-main > a .color-flex .color2 {
     background-color: #9CB0A7;
     height: 600px;
-    width: 1200px;
   }
   #my-work ul #branding-main > a .type-words-total {
     grid-area: right;
@@ -879,6 +989,14 @@ header #header-button > button {
   #my-work ul #branding-main > a .type-words-total .click-me-svg {
     margin-bottom: -250px;
   }
+}
+@media (min-width: 1024px) and (min-width: 1200px) {
+  #my-work ul #branding-main > a .type-words-total .click-me-svg {
+    width: 500px;
+    margin-bottom: -350px;
+  }
+}
+@media (min-width: 1024px) {
   #my-work ul #branding-main > a .my-work-img {
     grid-area: left;
     padding: 0px;
@@ -890,6 +1008,12 @@ header #header-button > button {
   #my-work ul #branding-main > a .my-work-img .img-resize {
     padding: 0px;
     width: 200px;
+  }
+}
+@media (min-width: 1024px) and (min-width: 1200px) {
+  #my-work ul #branding-main > a .my-work-img .img-resize {
+    padding: 0px;
+    width: 400px;
   }
 }
 #my-work ul #publications-main {
@@ -908,7 +1032,6 @@ header #header-button > button {
   #my-work ul #publications-main > a .color3 {
     background-color: #E7DFD7;
     height: 600px;
-    width: 1200px;
     grid-area: left;
   }
   #my-work ul #publications-main > a .type-words-total {
@@ -922,6 +1045,14 @@ header #header-button > button {
   #my-work ul #publications-main > a .type-words-total .click-me-svg {
     margin-bottom: -250px;
   }
+}
+@media (min-width: 1024px) and (min-width: 1200px) {
+  #my-work ul #publications-main > a .type-words-total .click-me-svg {
+    width: 500px;
+    margin-bottom: -350px;
+  }
+}
+@media (min-width: 1024px) {
   #my-work ul #publications-main > a .my-work-img {
     grid-area: right;
     padding: 0px;
@@ -933,6 +1064,12 @@ header #header-button > button {
   #my-work ul #publications-main > a .my-work-img .img-resize {
     padding: 0px;
     width: 200px;
+  }
+}
+@media (min-width: 1024px) and (min-width: 1200px) {
+  #my-work ul #publications-main > a .my-work-img .img-resize {
+    padding: 0px;
+    width: 400px;
   }
 }
 #my-work ul #posters-main {
@@ -954,11 +1091,11 @@ header #header-button > button {
     text-align: right;
     display: flex;
     justify-content: flex-end;
+    background-color: #E3BCBA;
   }
   #my-work ul #posters-main > a .color-flex .color4 {
     background-color: #E3BCBA;
     height: 600px;
-    width: 1200px;
   }
   #my-work ul #posters-main > a .type-words-total {
     grid-area: right;
@@ -971,6 +1108,14 @@ header #header-button > button {
   #my-work ul #posters-main > a .type-words-total .click-me-svg {
     margin-bottom: -250px;
   }
+}
+@media (min-width: 1024px) and (min-width: 1200px) {
+  #my-work ul #posters-main > a .type-words-total .click-me-svg {
+    width: 500px;
+    margin-bottom: -350px;
+  }
+}
+@media (min-width: 1024px) {
   #my-work ul #posters-main > a .my-work-img {
     grid-area: left;
     padding: 0px;
@@ -982,6 +1127,12 @@ header #header-button > button {
   #my-work ul #posters-main > a .my-work-img .img-resize {
     padding: 0px;
     width: 200px;
+  }
+}
+@media (min-width: 1024px) and (min-width: 1200px) {
+  #my-work ul #posters-main > a .my-work-img .img-resize {
+    padding: 0px;
+    width: 400px;
   }
 }
 #my-work ul #photos-main {
@@ -1000,7 +1151,6 @@ header #header-button > button {
   #my-work ul #photos-main > a .color5 {
     background-color: #9CB0A7;
     height: 600px;
-    width: 1200px;
     grid-area: left;
   }
   #my-work ul #photos-main > a .type-words-total {
@@ -1014,6 +1164,14 @@ header #header-button > button {
   #my-work ul #photos-main > a .type-words-total .click-me-svg {
     margin-bottom: -250px;
   }
+}
+@media (min-width: 1024px) and (min-width: 1200px) {
+  #my-work ul #photos-main > a .type-words-total .click-me-svg {
+    width: 500px;
+    margin-bottom: -350px;
+  }
+}
+@media (min-width: 1024px) {
   #my-work ul #photos-main > a .my-work-img {
     grid-area: right;
     padding: 0px;
@@ -1025,6 +1183,12 @@ header #header-button > button {
   #my-work ul #photos-main > a .my-work-img .img-resize {
     padding: 0px;
     width: 200px;
+  }
+}
+@media (min-width: 1024px) and (min-width: 1200px) {
+  #my-work ul #photos-main > a .my-work-img .img-resize {
+    padding: 0px;
+    width: 400px;
   }
 }
 
@@ -1045,6 +1209,12 @@ header #header-button > button {
 @media (min-width: 1024px) {
   #typpgraphy-sub div h1 {
     font-size: 5.625rem;
+  }
+}
+@media (min-width: 1200px) {
+  #typpgraphy-sub div h1 {
+    margin-left: -5vw;
+    margin-right: -5vw;
   }
 }
 #typpgraphy-sub div h2 {
@@ -1155,6 +1325,12 @@ header #header-button > button {
 @media (min-width: 1024px) {
   #branding_sub div h1 {
     font-size: 5.625rem;
+  }
+}
+@media (min-width: 1200px) {
+  #branding_sub div h1 {
+    margin-left: -5vw;
+    margin-right: -5vw;
   }
 }
 #branding_sub div h2 {
@@ -1279,6 +1455,12 @@ header #header-button > button {
     font-size: 5.625rem;
   }
 }
+@media (min-width: 1200px) {
+  #publications-sub div h1 {
+    margin-left: -5vw;
+    margin-right: -5vw;
+  }
+}
 #publications-sub div h2 {
   font-size: 2.5rem;
   padding: 20px 40px;
@@ -1363,6 +1545,12 @@ header #header-button > button {
     font-size: 5.625rem;
   }
 }
+@media (min-width: 1200px) {
+  #posters-sub div h1 {
+    margin-left: -5vw;
+    margin-right: -5vw;
+  }
+}
 #posters-sub div h2 {
   font-size: 2.5rem;
   padding: 20px 40px;
@@ -1445,6 +1633,12 @@ header #header-button > button {
 @media (min-width: 1024px) {
   #photos-sub div h1 {
     font-size: 5.625rem;
+  }
+}
+@media (min-width: 1200px) {
+  #photos-sub div h1 {
+    margin-left: -5vw;
+    margin-right: -5vw;
   }
 }
 #photos-sub div h2 {

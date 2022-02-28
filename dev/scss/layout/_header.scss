@@ -25,6 +25,12 @@ header {
 		}
 		#logo-container {
 			grid-area: survival;
+
+			>a{
+				>svg{
+					width: 70px;
+				}
+			}
 			button {
 				background-color: $lightblue;
 				color: $darkblue;
