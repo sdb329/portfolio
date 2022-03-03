@@ -24,6 +24,11 @@
 
             @include lg {
                 font-size: rem-calc(90);
+                margin-bottom: 60px ;
+            }
+            @include xl{
+                margin-bottom: 100px ;
+
             }
 
            

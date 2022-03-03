@@ -21,7 +21,12 @@
 
             @include xl {
                 grid-area: contain;
+
         
+                
+     
+                 
+            
         
             }
         }
@@ -94,12 +99,31 @@
          
         }
 
+        li{
+            @include lg{
+               margin: 80px 0px;
 
+            }
+
+            @include xl{
+        
+                    margin: 200px 0px;
+     
+                 
+            }
+        }
        
         #typography-main{
            
             background-color: $pink;
-           
+
+            
+            @include xl{
+        
+                margin-top: 60px ;
+ 
+             
+        }
 
             @include lg{
                 background-color: transparent;
@@ -398,9 +422,18 @@
 
             
         }
+
+
         
         #photos-main{
             background-color: $sage;
+
+            @include xl{
+        
+                margin-bottom: 60px ;
+ 
+             
+        }
 
             @include lg{
                 background-color: transparent;
