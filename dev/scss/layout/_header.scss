@@ -2,6 +2,38 @@
     Header
 ============= */
 header {
+
+	#circle-cover{
+		position: fixed;
+		
+		width: 100vw;
+		height: 100vh;
+		// width: 100px;
+
+		overflow-x: hidden;
+		overflow-y: hidden;
+		z-index: 1;
+
+	
+
+		#circle-svg{
+
+			position:fixed;
+			top:0;
+			right:0;
+
+			// left:24px;
+
+		}
+
+	
+	}
+	section{
+
+
+	
+
+
 	// background-color: $darkblue;
 	left: 0;
 	// position: fixed;
@@ -32,7 +64,7 @@ header {
 				}
 			}
 
-			
+
 			button {
 				background-color: $lightblue;
 				color: $darkblue;
@@ -47,8 +79,11 @@ header {
 				}
 			}
 		}
+
+
 		#burger-container {
 			grid-area: burger;
+			z-index: 3;
 			@include lg {
 				display: none !important;
 			}
@@ -142,4 +177,5 @@ header {
 			}
 		}
 	}
+}
 }

@@ -21,6 +21,15 @@
 <body class="body">
 
     <header>
+    
+        <section id="circle-cover">
+            <svg id="circle-svg" width="176" height="176" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g id="circle-nav">
+                  <circle id="circle" cx="87.801" cy="87.801" r="87.801" fill="#9CB0A7"/>
+                </g>
+              </svg>
+        </section>
+    
         <section>
             <div id="navigation-header">
     
@@ -34,18 +43,21 @@
                     </a>
                 </section>
     
+    
                 <section id="burger-container">
-                    <svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 173 90">
-                        <g id="burger">
-                          <path fill="#F5F5F5" d="M0 0h173v90H0z"/>
-                          <path id="top" d="M18.695 29.041H150" stroke="#000" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-                          <path id="bottom" d="M150 56.98H18.695l66.089-28.083L150 56.978Z" stroke="#000" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+              
+    
+                      <svg id="burger-svg" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 173 90">
+                        <g id="burger" stroke="#000" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+                          <path id="top" d="M18.695 29.041H150"/>
+                          <path id="bottom" d="M150 56.98H18.695l66.089-28.083L150 56.978Z"/>
                         </g>
                       </svg>
                         
                 </section>
     
     
+            
     
     
                 <nav id="nav-container" data-nav="main-navigation">
@@ -149,7 +161,7 @@
                <input type="text" id="input-subject" placeholder="Subject">
              </div>
              <div class="half right cf">
-               <textarea name="message" type="text" id="input-message" placeholder="Message"></textarea>
+               <textarea name="message" id="input-message" placeholder="Message"></textarea>
              </div>  
              <input type="submit" value="Submit" id="input-submit">
            </form>

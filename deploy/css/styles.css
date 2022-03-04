@@ -354,6 +354,7 @@ template {
 ============= */
 .body {
   background-color: #F5F5F5;
+  overflow-x: hidden;
 }
 
 ul {
@@ -518,12 +519,25 @@ button:hover {
 /* =============
     Header
 ============= */
-header {
+header #circle-cover {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  z-index: 1;
+}
+header #circle-cover #circle-svg {
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+header section {
   left: 0;
   top: 0;
   width: 100%;
 }
-header #navigation-header {
+header section #navigation-header {
   display: grid;
   grid-template-areas: "survival burger" "nav nav";
   grid-template-columns: 90% auto;
@@ -531,25 +545,25 @@ header #navigation-header {
   padding-top: 32px;
 }
 @media (min-width: 1024px) {
-  header #navigation-header {
+  header section #navigation-header {
     grid-template-areas: "survival nav";
     grid-template-columns: 35% auto;
     padding-right: 16px;
   }
 }
 @media (min-width: 1200px) {
-  header #navigation-header {
+  header section #navigation-header {
     grid-template-areas: "survival nav";
     grid-template-columns: 40% auto;
   }
 }
-header #navigation-header #logo-container {
+header section #navigation-header #logo-container {
   grid-area: survival;
 }
-header #navigation-header #logo-container > a > svg {
+header section #navigation-header #logo-container > a > svg {
   width: 70px;
 }
-header #navigation-header #logo-container button {
+header section #navigation-header #logo-container button {
   background-color: #B3ECFF;
   color: #15344F;
   display: inline-block;
@@ -557,64 +571,65 @@ header #navigation-header #logo-container button {
   padding: 10px 20px;
   transition: 0.25s;
 }
-header #navigation-header #logo-container button:hover {
+header section #navigation-header #logo-container button:hover {
   background-color: #15344F;
   border: 1px solid #B3ECFF;
   color: #B3ECFF;
 }
-header #navigation-header #burger-container {
+header section #navigation-header #burger-container {
   grid-area: burger;
+  z-index: 3;
 }
 @media (min-width: 1024px) {
-  header #navigation-header #burger-container {
+  header section #navigation-header #burger-container {
     display: none !important;
   }
 }
-header #navigation-header #burger-container i {
+header section #navigation-header #burger-container i {
   color: #C8F8D6;
   cursor: pointer;
   font-size: 3.125rem;
 }
-header #navigation-header #nav-container {
+header section #navigation-header #nav-container {
   display: none;
   grid-area: nav;
   padding: 20px 10px 10px;
 }
 @media (min-width: 1024px) {
-  header #navigation-header #nav-container {
+  header section #navigation-header #nav-container {
     display: block !important;
   }
 }
-header #search-md-flex {
+header section #search-md-flex {
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding-top: 100px;
 }
 @media (min-width: 1024px) {
-  header #search-md-flex {
+  header section #search-md-flex {
     padding-top: 100px;
   }
 }
-header #search-flex {
+header section #search-flex {
   display: flex;
   justify-content: center;
 }
-header #search-flex #search-bar {
+header section #search-flex #search-bar {
   background-color: #fff;
   border: 4px #0A7A2A solid;
   border-radius: 40px;
   margin: 10px;
   width: 90%;
 }
-header #search-flex #search-bar > form {
+header section #search-flex #search-bar > form {
   padding: 5px;
 }
-header #search-flex #search-bar > form > i {
+header section #search-flex #search-bar > form > i {
   color: #0A7A2A;
   font-size: 1.5rem;
 }
-header #search-flex #search-bar > form > input {
+header section #search-flex #search-bar > form > input {
   background-color: transparent;
   border: none;
   border-radius: 0px;
@@ -623,39 +638,39 @@ header #search-flex #search-bar > form > input {
   font-variation-settings: "wght" 600;
   font-weight: 300;
 }
-header #search-flex #search-bar > form > input::placeholder {
+header section #search-flex #search-bar > form > input::placeholder {
   color: #0A7A2A;
 }
-header #search-flex #search-bar > form > input:-ms-input-placeholder {
+header section #search-flex #search-bar > form > input:-ms-input-placeholder {
   color: #0A7A2A;
 }
-header #search-flex #search-bar > form > input::-ms-input-placeholder {
+header section #search-flex #search-bar > form > input::-ms-input-placeholder {
   color: #0A7A2A;
 }
-header #header-button {
+header section #header-button {
   display: flex;
   justify-content: center;
 }
-header #header-button > button {
+header section #header-button > button {
   border-radius: 0px;
   flex-grow: 1;
 }
 @media (min-width: 768px) {
-  header #search-md-flex {
+  header section #search-md-flex {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
   }
-  header #search-md-flex #header-button {
+  header section #search-md-flex #header-button {
     flex-grow: 0.2;
     order: 1;
     padding-left: 16px;
   }
-  header #search-md-flex #header-button > button {
+  header section #search-md-flex #header-button > button {
     border-radius: 20px;
     margin-bottom: 10px;
   }
-  header #search-md-flex #search-flex {
+  header section #search-md-flex #search-flex {
     flex-grow: 0.2;
     order: 2;
   }
@@ -857,6 +872,9 @@ header #header-button > button {
   }
 }
 
+#my-work {
+  z-index: 5;
+}
 @media (min-width: 1200px) {
   #my-work > div {
     display: grid;
