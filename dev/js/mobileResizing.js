@@ -14,9 +14,19 @@ export function displayWindowSize(){
         alpha: 0
     
     })
+    gsap.set(".stagger-in-nav", {
+            
+        alpha:0
+    
+    })
 }else{
     gsap.set("#nav-container", {y:0,
         alpha: 1
+    
+    })
+    gsap.set(".stagger-in-nav", {
+            
+        alpha:1
     
     })
 
