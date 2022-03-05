@@ -83,7 +83,7 @@ header {
 
 		#burger-container {
 			grid-area: burger;
-			z-index: 3;
+			z-index: 4;
 			@include lg {
 				display: none !important;
 			}
@@ -95,12 +95,22 @@ header {
 		}
 		#nav-container {
 			// background-color: $darkblue;
-			display: none;
+			// display: none;
+			z-index: 3;
+			position: fixed;
+			width: 100vw;
+			height: 100vh;
 			grid-area: nav;
 			padding: 20px 10px 10px;
+
+			
+
 			@include lg {
 				// background-color: $darkblue;
 				display: block !important;
+				position: static;
+				height: 32px;
+				width: 20vw;
 			}
 		}
 	}

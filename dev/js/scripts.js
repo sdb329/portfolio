@@ -6,6 +6,10 @@
 
 import { burgerTL, burgerJumpTL, circleTL} from "./burgerAnimation"
 
+import { displayWindowSize} from "./mobileResizing"
+
+import { menuAnimation} from "./mobileMenu"
+
 
 
 var burgerButton = document.querySelector("#burger-svg")
@@ -14,17 +18,13 @@ let menuScrollable = true;
 
 
 
-
-burgerButton.addEventListener("click", () =>{
-    
-    console.log("burger clicked");
-
-    
-
+function openCloseMenu(){
     if(canISeeMenu === false) {
         burgerTL.play();
         circleTL.play();
         burgerJumpTL.play();
+
+        menuAnimation.play();
         screenLocker();
         canISeeMenu = true;
         
@@ -32,11 +32,51 @@ burgerButton.addEventListener("click", () =>{
         burgerTL.reverse();
         circleTL.reverse();
         burgerJumpTL.pause();
+        menuAnimation.reverse();
         screenLocker();
         canISeeMenu = false;
 
     }
-});
+}
+
+burgerButton.addEventListener("click", openCloseMenu)
+
+let navButtons = document.querySelectorAll(".nav-btns");
+console.log(navButtons);
+
+for (const button of navButtons){
+    button.addEventListener("click", openCloseMenu)
+}
+
+// for(let i = 0; i < navButtons.length; i++){
+//     navButtons[i].addEventListener("click", openCloseMenu)
+// }
+
+// burgerButton.addEventListener("click", () =>{
+    
+//     console.log("burger clicked");
+
+    
+
+//     if(canISeeMenu === false) {
+//         burgerTL.play();
+//         circleTL.play();
+//         burgerJumpTL.play();
+
+//         menuAnimation.play();
+//         screenLocker();
+//         canISeeMenu = true;
+        
+//     }else{
+//         burgerTL.reverse();
+//         circleTL.reverse();
+//         burgerJumpTL.pause();
+//         menuAnimation.reverse();
+//         screenLocker();
+//         canISeeMenu = false;
+
+//     }
+// });
 
 function screenLocker(){
 
@@ -53,3 +93,6 @@ function screenLocker(){
     
 }
 
+
+window.addEventListener('load', displayWindowSize)
+window.addEventListener('resize', displayWindowSize)

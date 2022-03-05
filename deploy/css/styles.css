@@ -354,7 +354,6 @@ template {
 ============= */
 .body {
   background-color: #F5F5F5;
-  overflow-x: hidden;
 }
 
 ul {
@@ -479,16 +478,31 @@ button:hover {
 ============= */
 #nav-container ul {
   height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 3.125rem;
 }
 @media (min-width: 1024px) {
   #nav-container ul {
     display: flex;
     justify-content: space-between;
+    flex-direction: row;
+    align-items: flex-start;
+    font-size: 1.25rem;
+    width: 60vw;
   }
 }
 #nav-container ul li {
   margin-bottom: 20px;
   text-align: right;
+  padding: 10px 0px;
+}
+@media (min-width: 768px) {
+  #nav-container ul li {
+    padding: 30px 0px;
+  }
 }
 @media (min-width: 1024px) {
   #nav-container ul li {
@@ -578,7 +592,7 @@ header section #navigation-header #logo-container button:hover {
 }
 header section #navigation-header #burger-container {
   grid-area: burger;
-  z-index: 3;
+  z-index: 4;
 }
 @media (min-width: 1024px) {
   header section #navigation-header #burger-container {
@@ -591,13 +605,19 @@ header section #navigation-header #burger-container i {
   font-size: 3.125rem;
 }
 header section #navigation-header #nav-container {
-  display: none;
+  z-index: 3;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
   grid-area: nav;
   padding: 20px 10px 10px;
 }
 @media (min-width: 1024px) {
   header section #navigation-header #nav-container {
     display: block !important;
+    position: static;
+    height: 32px;
+    width: 20vw;
   }
 }
 header section #search-md-flex {
