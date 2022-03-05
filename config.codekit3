@@ -967,6 +967,16 @@
       "plM" : 52780316221407,
       "prP" : 0
     },
+    "\/design\/arrow2.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/design\/arrow2.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
     "\/design\/burger-portfolio.svg" : {
       "ft" : 2097152,
       "miP" : 0,
@@ -1269,6 +1279,17 @@
       "oAP" : "\/deploy\/index.html",
       "oF" : 2
     },
+    "\/dev\/js\/arrow-anim.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 1,
+      "oAP" : "\/dev\/js\/arrow-anim-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
     "\/dev\/js\/burgerAnimation.js" : {
       "bF" : 0,
       "ft" : 64,
@@ -1276,6 +1297,28 @@
       "mi" : 1,
       "oA" : 1,
       "oAP" : "\/dev\/js\/burgerAnimation-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/dev\/js\/menu-min.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/dev\/js\/menu-min-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/dev\/js\/menu.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 1,
+      "oAP" : "\/dev\/js\/menu-min.js",
       "oF" : 0,
       "sC" : 3,
       "tS" : 0

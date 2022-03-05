@@ -10,6 +10,11 @@ import { displayWindowSize} from "./mobileResizing"
 
 import { menuAnimation} from "./mobileMenu"
 
+import { menuListners} from "./menu"
+
+import { arrowJumpTL} from "./arrow-anim"
+
+
 
 
 var burgerButton = document.querySelector("#burger-svg")
@@ -38,6 +43,13 @@ function openCloseMenu(){
 
     }
 }
+
+window.addEventListener("resize", function(){
+    if(canISeeMenu === true){
+        openCloseMenu();
+
+    }
+});
 
 burgerButton.addEventListener("click", openCloseMenu)
 
@@ -93,6 +105,11 @@ function screenLocker(){
     
 }
 
+
+window.addEventListener('load', arrowJumpTL);
+
+window.addEventListener('load', menuListners);
+window.addEventListener('resize', menuListners);
 
 window.addEventListener('load', displayWindowSize)
 window.addEventListener('resize', displayWindowSize)

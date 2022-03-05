@@ -27,6 +27,16 @@
 			margin-bottom: 20px;
 			text-align: right;
 			padding: 10px 0px;
+			
+
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			// &:hover{
+			// 	background-color: $pink;
+			// 	width: 100vw;
+			// }
 			@include md {
 				padding: 30px 0px;
 			}
@@ -34,6 +44,7 @@
 				align-items: center;
 				display: flex;
 				margin-bottom: 0px;
+
 			}
 			a:link,
             a:visited {
@@ -41,12 +52,24 @@
 				padding: 0px 0px;
 				text-decoration: none;
 				transition: 0.25s;
+				width: 100vw;
+				text-align: center;
+				
+				
 				@include lg {
 					color: $darkgray;
+					width: 10vw;
 				}
 				&:hover,
                 &:active {
 					color: $pink;
+					padding: 20px 0px;
+
+					@include lg{
+						padding:0px;
+						font-size: rem-calc(22);
+					}
+					// width: 20vw;
 				}
 			}
 		}
