@@ -22,7 +22,11 @@ bottomTL.to("#bottom",{duration:0.25, drawSVG: "47% 100%"})
 .to("#bottom",{duration:0.25});
 
 
+function rotationSetting(){
+    gsap.set(".click-me-type",{rotation:0});
+    console.log("yo");
 
+}
 
 export function sectionListners(){
 
@@ -49,7 +53,9 @@ export function sectionListners(){
                     gsap.to(typeWords[i],{duration:.5, scale: 1, stagger:.3, color: '#112E3E'})
 
                     clickMeTL.pause();
-                    clickMeTL2.play();
+                    // clickMeTL2.play();
+                    // gsap.set(".click-me-type",{rotation:0});
+                    rotationSetting();
 
              
                 })
