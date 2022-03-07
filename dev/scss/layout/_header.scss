@@ -83,6 +83,7 @@ header {
 
 		#burger-container {
 			grid-area: burger;
+		
 			z-index: 4;
 			@include lg {
 				display: none !important;

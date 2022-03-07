@@ -14,6 +14,8 @@ import { menuListners} from "./menu"
 
 import { arrowJumpTL} from "./arrow-anim"
 
+import { sectionListners } from "./sectionMain"
+
 
 
 
@@ -107,6 +109,14 @@ function screenLocker(){
 
 
 window.addEventListener('load', arrowJumpTL);
+
+
+window.addEventListener('load', sectionListners);
+
+
+
+
+
 
 window.addEventListener('load', menuListners);
 window.addEventListener('resize', menuListners);
