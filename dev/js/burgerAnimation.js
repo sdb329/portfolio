@@ -31,6 +31,10 @@ circleTL.to("#circle-cover", {duration:.01, y: "+=100vh"});
 circleTL.to("#circle-svg", {duration:1, scale: 50});
 
 
+
+
+
+
 const bottomTL = new gsap.timeline();
 bottomTL.to("#bottom1",{duration:0.25, drawSVG: "47% 100%"})
 .to("#bottom1",{duration:0.25});

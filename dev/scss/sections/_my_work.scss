@@ -205,9 +205,14 @@
                 background-color: transparent;
                 padding: 0px;
                 >a{
-                    display: grid;
-                    grid-template-areas: " left . right";
-                    grid-template-columns: auto 16px 70vw;
+                    // display: grid;
+                    // grid-template-areas: " left . right";
+                    // grid-template-columns: auto 16px 70vw;
+                    display: flex;
+                    justify-content: flex-end;
+                    background-color: $sage;
+                    // width: 70vw;
+                    margin-left: 30vw;
 
                     .color-flex{
                        
@@ -216,13 +221,14 @@
 
                         text-align: right;
 
-                        display: flex;
-                        justify-content: flex-end;
-                        background-color: $sage;
+                      
+                        
+                        
 
                         .color2{
-                            background-color: $sage;
+                            // background-color: $sage;
                             height: 600px;
+                            // width: 100vw;
                             // width: 1200px;
                         }
                     }
