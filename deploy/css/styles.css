@@ -1043,17 +1043,20 @@ header section #header-button > button {
     padding: 0px;
   }
   #my-work ul #branding-main > a {
-    display: flex;
-    justify-content: flex-end;
-    background-color: #9CB0A7;
-    margin-left: 30vw;
+    display: grid;
+    grid-template-areas: " left . right";
+    grid-template-columns: auto 16px 70vw;
   }
   #my-work ul #branding-main > a .color-flex {
     text-align: right;
     grid-area: right;
     text-align: right;
+    display: flex;
+    justify-content: flex-end;
+    background-color: #9CB0A7;
   }
-  #my-work ul #branding-main > a .color-flex .color2 {
+  #my-work ul #branding-main > a .color-flex .color4 {
+    background-color: #9CB0A7;
     height: 600px;
   }
   #my-work ul #branding-main > a .type-words-total {
