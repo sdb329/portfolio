@@ -112,6 +112,8 @@ window.addEventListener('load', arrowJumpTL);
 
 
 window.addEventListener('load', sectionListners);
+window.addEventListener('resize', sectionListners);
+
 
 
 
