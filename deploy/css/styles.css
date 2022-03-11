@@ -819,6 +819,10 @@ header section #header-button > button {
   }
 }
 
+#about_me .carousel {
+  width: 100%;
+  height: 100%;
+}
 @media (min-width: 1200px) {
   #about_me {
     display: grid;
@@ -1376,24 +1380,57 @@ header section #header-button > button {
     padding: 8px 90px;
   }
 }
+@media (min-width: 1200px) {
+  #typpgraphy-sub div > div .carousel {
+    height: 700px;
+  }
+}
+#typpgraphy-sub div > div .carousel__slide {
+  width: 100%;
+  height: 100%;
+}
+@media (min-width: 1200px) {
+  #typpgraphy-sub div > div .carousel__slide {
+    height: 700px;
+  }
+}
+@media (min-width: 1200px) {
+  #typpgraphy-sub div > div .carousel2 {
+    height: 700px;
+  }
+}
+#typpgraphy-sub div > div .carousel__slide2 {
+  width: 100%;
+  height: 100%;
+}
+@media (min-width: 1200px) {
+  #typpgraphy-sub div > div .carousel__slide2 {
+    height: 700px;
+  }
+}
 #typpgraphy-sub div > div > ul {
   display: flex;
-  flex-wrap: wrap;
   flex-direction: row;
   justify-content: center;
+  align-items: center;
+}
+#typpgraphy-sub div > div > ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 #typpgraphy-sub div > div > ul li img {
-  width: 90vw;
+  max-height: 700px;
   padding: 16px;
 }
 @media (min-width: 768px) {
   #typpgraphy-sub div > div > ul li img {
-    width: 40vw;
+    height: 50vw;
   }
 }
 @media (min-width: 1200px) {
   #typpgraphy-sub div > div > ul li img {
-    width: 500px;
+    height: 40vw;
   }
 }
 #typpgraphy-sub div > div > ul .full-banner {

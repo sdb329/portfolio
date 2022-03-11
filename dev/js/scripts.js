@@ -16,6 +16,7 @@ import { arrowJumpTL} from "./arrow-anim"
 
 import { sectionListners } from "./sectionMain"
 
+import { mainCarousel, mainCarousel2 } from "./carousel"
 
 
 
@@ -54,12 +55,16 @@ window.addEventListener("resize", function(){
 });
 
 burgerButton.addEventListener("click", openCloseMenu)
+burgerButton.addEventListener("click", sectionListners)
+burgerButton.addEventListener("click", menuListners)
 
 let navButtons = document.querySelectorAll(".nav-btns");
 console.log(navButtons);
 
 for (const button of navButtons){
     button.addEventListener("click", openCloseMenu)
+    button.addEventListener("click", sectionListners)
+    button.addEventListener("click", menuListners)
 }
 
 // for(let i = 0; i < navButtons.length; i++){
@@ -117,6 +122,8 @@ window.addEventListener('resize', sectionListners);
 
 
 
+window.addEventListener('load', mainCarousel);
+window.addEventListener('load', mainCarousel2);
 
 
 

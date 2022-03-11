@@ -1,0 +1,1 @@
+import{Carousel}from"@fancyapps/ui";const mainCarousel=new Carousel(document.querySelector("#mainCarousel"),{Dots:!1});
