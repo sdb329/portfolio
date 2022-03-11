@@ -1,0 +1,1 @@
+import{Carousel}from"@fancyapps/ui";export const mainCarousel=new Carousel(document.querySelector(".carousel"),{Dots:!0,center:!1,slidesPerPage:1});export const mainCarousel2=new Carousel(document.querySelector(".carousel2"),{Dots:!0,center:!1,slidesPerPage:1});
