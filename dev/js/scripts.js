@@ -4,6 +4,8 @@
 
 // import { scrollAnimation, scrollAnimation2, scrollAnimationButton1 } from "./scrollAnimation"
 
+import { Carousel } from "@fancyapps/ui";
+
 import { burgerTL, burgerJumpTL, circleTL} from "./burgerAnimation"
 
 import { displayWindowSize} from "./mobileResizing"
@@ -16,7 +18,7 @@ import { arrowJumpTL} from "./arrow-anim"
 
 import { sectionListners } from "./sectionMain"
 
-import { mainCarousel, mainCarousel2 } from "./carousel"
+
 
 
 
@@ -97,6 +99,25 @@ for (const button of navButtons){
 //     }
 // });
 
+
+
+
+
+
+
+
+
+const mainCarousel = new Carousel(document.querySelector(".carousel"), {
+    Dots: true,
+
+    'center': false,
+    slidesPerPage: 1
+
+  });
+
+
+
+
 function screenLocker(){
 
     if(menuScrollable === true){
@@ -123,7 +144,7 @@ window.addEventListener('resize', sectionListners);
 
 
 window.addEventListener('load', mainCarousel);
-window.addEventListener('load', mainCarousel2);
+
 
 
 

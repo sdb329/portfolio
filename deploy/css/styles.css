@@ -822,6 +822,7 @@ header section #header-button > button {
 #about_me .carousel {
   width: 100%;
   height: 100%;
+  display: none;
 }
 @media (min-width: 1200px) {
   #about_me {
