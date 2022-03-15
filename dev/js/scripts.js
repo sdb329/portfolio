@@ -115,6 +115,17 @@ const mainCarousel = new Carousel(document.querySelector(".carousel"), {
 
   });
 
+  const mainCarousel2 = new Carousel(document.querySelector(".carousel2"), {
+    Dots: true,
+
+    'center': false,
+    slidesPerPage: 1
+
+  });
+
+  window.addEventListener('load', mainCarousel);
+  window.addEventListener('load', mainCarousel2);
+
 
 
 
@@ -143,7 +154,7 @@ window.addEventListener('resize', sectionListners);
 
 
 
-window.addEventListener('load', mainCarousel);
+
 
 
 
