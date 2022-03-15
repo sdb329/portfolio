@@ -1599,6 +1599,20 @@ header section #header-button > button {
 #publications-sub div {
   grid-area: sub2;
 }
+@media (min-width: 1200px) {
+  #publications-sub div .carousel {
+    height: 700px;
+  }
+}
+#publications-sub div .carousel__slide {
+  width: 100%;
+  height: 100%;
+}
+@media (min-width: 1200px) {
+  #publications-sub div .carousel__slide {
+    height: 700px;
+  }
+}
 #publications-sub div h1 {
   background-color: #E3BCBA;
   margin: 20px 60px;
@@ -1660,22 +1674,27 @@ header section #header-button > button {
 }
 #publications-sub div > ul {
   display: flex;
-  flex-wrap: wrap;
   flex-direction: row;
   justify-content: center;
+  align-items: center;
+}
+#publications-sub div > ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 #publications-sub div > ul li img {
-  width: 90vw;
+  max-height: 700px;
   padding: 16px;
 }
 @media (min-width: 768px) {
   #publications-sub div > ul li img {
-    width: 40vw;
+    height: 50vw;
   }
 }
 @media (min-width: 1200px) {
   #publications-sub div > ul li img {
-    width: 500px;
+    height: 40vw;
   }
 }
 
