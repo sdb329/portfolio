@@ -933,20 +933,20 @@
       "oAP" : "\/deploy\/photos.html",
       "oF" : 0
     },
-    "\/deploy\/posters.html" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/deploy\/posters.html",
-      "oF" : 0
-    },
     "\/deploy\/publications.html" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/deploy\/publications.html",
+      "oF" : 0
+    },
+    "\/deploy\/pworkfinal.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/pworkfinal.html",
       "oF" : 0
     },
     "\/deploy\/typography.html" : {
@@ -1217,20 +1217,20 @@
       "oAP" : "\/dev\/content\/my_work.html",
       "oF" : 0
     },
+    "\/dev\/content\/p_work.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/content\/p_work.html",
+      "oF" : 0
+    },
     "\/dev\/content\/photos_sub.kit" : {
       "cB" : 0,
       "ft" : 2048,
       "hM" : 0,
       "oA" : 1,
       "oAP" : "\/dev\/content\/photos_sub.html",
-      "oF" : 0
-    },
-    "\/dev\/content\/posters_sub.kit" : {
-      "cB" : 0,
-      "ft" : 2048,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/dev\/content\/posters_sub.html",
       "oF" : 0
     },
     "\/dev\/content\/publications_sub.kit" : {
@@ -1385,20 +1385,20 @@
       "oAP" : "\/deploy\/photos.html",
       "oF" : 2
     },
-    "\/dev\/posters.kit" : {
-      "cB" : 0,
-      "ft" : 2048,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/deploy\/posters.html",
-      "oF" : 2
-    },
     "\/dev\/publications.kit" : {
       "cB" : 0,
       "ft" : 2048,
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/deploy\/publications.html",
+      "oF" : 2
+    },
+    "\/dev\/pworkfinal.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/pworkfinal.html",
       "oF" : 2
     },
     "\/dev\/scss\/base\/_base.scss" : {
@@ -1611,21 +1611,6 @@
       "pg" : 0,
       "sct" : 0
     },
-    "\/dev\/scss\/sections\/_posters.scss" : {
-      "aP" : 0,
-      "bl" : 0,
-      "co" : 0,
-      "dP" : 10,
-      "ec" : 1,
-      "ft" : 4,
-      "ma" : 0,
-      "oA" : 1,
-      "oAP" : "\/dev\/scss\/sections\/_posters.css",
-      "oF" : 0,
-      "oS" : 0,
-      "pg" : 0,
-      "sct" : 0
-    },
     "\/dev\/scss\/sections\/_publications.scss" : {
       "aP" : 0,
       "bl" : 0,
@@ -1636,6 +1621,21 @@
       "ma" : 0,
       "oA" : 1,
       "oAP" : "\/dev\/scss\/sections\/_publications.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/dev\/scss\/sections\/_pwork.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/scss\/sections\/_pwork.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,
