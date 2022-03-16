@@ -4,7 +4,7 @@
 
 // import { scrollAnimation, scrollAnimation2, scrollAnimationButton1 } from "./scrollAnimation"
 
-import { Carousel } from "@fancyapps/ui";
+import { Carousel, Fancybox } from "@fancyapps/ui";
 
 import { burgerTL, burgerJumpTL, circleTL} from "./burgerAnimation"
 
@@ -17,6 +17,8 @@ import { menuListners} from "./menu"
 import { arrowJumpTL} from "./arrow-anim"
 
 import { sectionListners } from "./sectionMain"
+
+import { scrollAnimation, scrollAnimation2} from "./scrollAnimation"
 
 
 
@@ -128,8 +130,7 @@ function screenLocker(){
     else{
         window.onscroll = function(){};
         menuScrollable = true;
-    }
-       
+    } 
     
 }
 
@@ -153,3 +154,23 @@ window.addEventListener('resize', menuListners);
 
 window.addEventListener('load', displayWindowSize)
 window.addEventListener('resize', displayWindowSize)
+
+
+
+
+window.addEventListener('load', function(){
+ 
+
+
+    scrollAnimation(".scroll1", ".scroll-parent1");
+    scrollAnimation(".scroll2", ".scroll-parent2");
+
+    scrollAnimation2(".scroll3", ".scroll3");
+    scrollAnimation2(".scroll4", ".scroll4");
+    scrollAnimation2(".scroll5", ".scroll5");
+    scrollAnimation2(".scroll6", ".scroll6");
+    scrollAnimation2(".scroll7", ".scroll7");
+    scrollAnimation2(".scroll8", ".scroll8");
+  
+
+});

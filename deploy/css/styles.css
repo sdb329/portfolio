@@ -352,7 +352,7 @@ template {
 /* =============
     Base
 ============= */
-.body {
+body {
   background-color: #F5F5F5;
 }
 
@@ -1381,7 +1381,10 @@ header section #header-button > button {
     padding: 8px 90px;
   }
 }
-@media (min-width: 1200px) {
+#typpgraphy-sub div > div .carousel {
+  height: 400px;
+}
+@media (min-width: 768px) {
   #typpgraphy-sub div > div .carousel {
     height: 700px;
   }
@@ -1395,22 +1398,9 @@ header section #header-button > button {
     height: 700px;
   }
 }
-@media (min-width: 1200px) {
-  #typpgraphy-sub div > div .carousel2 {
-    height: 700px;
-  }
-}
-#typpgraphy-sub div > div .carousel__slide2 {
-  width: 100%;
-  height: 100%;
-}
-@media (min-width: 1200px) {
-  #typpgraphy-sub div > div .carousel__slide2 {
-    height: 700px;
-  }
-}
 #typpgraphy-sub div > div > ul {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   justify-content: center;
   align-items: center;
@@ -1421,22 +1411,18 @@ header section #header-button > button {
   align-items: center;
 }
 #typpgraphy-sub div > div > ul li img {
-  max-height: 700px;
-  padding: 16px;
+  max-height: 300px;
 }
 @media (min-width: 768px) {
   #typpgraphy-sub div > div > ul li img {
-    height: 50vw;
+    max-height: 700px;
+    padding: 16px;
   }
 }
 @media (min-width: 1200px) {
   #typpgraphy-sub div > div > ul li img {
     height: 40vw;
   }
-}
-#typpgraphy-sub div > div > ul .full-banner {
-  display: none;
-  position: relative;
 }
 #typpgraphy-sub div > div #gif-sj-flex {
   display: flex;
@@ -1459,6 +1445,45 @@ header section #header-button > button {
   width: 90vw;
   padding: 16px;
   text-align: center;
+}
+#typpgraphy-sub div > div #aesops-fables > li > a > img {
+  height: 250px;
+  transition: 0.5s;
+}
+#typpgraphy-sub div > div #aesops-fables > li > a:hover > img {
+  height: 300px;
+}
+#typpgraphy-sub div > div #aesops-fables .hidden {
+  display: none;
+}
+#typpgraphy-sub div > div #soah-gallery > li > a > img {
+  height: 250px;
+  transition: 0.5s;
+}
+@media (min-width: 768px) {
+  #typpgraphy-sub div > div #soah-gallery > li > a > img {
+    height: 400px;
+  }
+}
+#typpgraphy-sub div > div #soah-gallery > li > a:hover > img {
+  height: 300px;
+}
+@media (min-width: 768px) {
+  #typpgraphy-sub div > div #soah-gallery > li > a:hover > img {
+    height: 450px;
+  }
+}
+#typpgraphy-sub div > div #soah-gallery .hidden {
+  display: none;
+}
+#typpgraphy-sub div > div #souvenir-gallery > li > img {
+  height: 250px;
+  transition: 0.5s;
+}
+@media (min-width: 768px) {
+  #typpgraphy-sub div > div #souvenir-gallery > li > img {
+    height: 400px;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -1530,29 +1555,72 @@ header section #header-button > button {
     padding: 8px 90px;
   }
 }
+#branding_sub div .carousel {
+  height: 400px;
+}
+@media (min-width: 768px) {
+  #branding_sub div .carousel {
+    height: 700px;
+  }
+}
+#branding_sub div .carousel__slide {
+  width: 100%;
+  height: 100%;
+}
+@media (min-width: 1200px) {
+  #branding_sub div .carousel__slide {
+    height: 700px;
+  }
+}
 #branding_sub div > ul {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: center;
+  align-items: center;
+}
+#branding_sub div > ul .hidden {
+  display: none;
+}
+#branding_sub div > ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 #branding_sub div > ul li img {
-  width: 90vw;
-  padding: 16px;
+  max-height: 300px;
 }
 @media (min-width: 768px) {
   #branding_sub div > ul li img {
-    width: 40vw;
+    max-height: 600px;
+    padding: 16px;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 1024px) {
   #branding_sub div > ul li img {
-    width: 500px;
+    max-height: 700px;
+    padding: 16px;
   }
 }
-#branding_sub div > ul .full-banner {
+#branding_sub div #arctic-foods-gallery > li > a > img {
+  height: 250px;
+  transition: 0.5s;
+}
+@media (min-width: 768px) {
+  #branding_sub div #arctic-foods-gallery > li > a > img {
+    height: 400px;
+  }
+}
+#branding_sub div #arctic-foods-gallery > li > a:hover > img {
+  height: 300px;
+}
+@media (min-width: 768px) {
+  #branding_sub div #arctic-foods-gallery > li > a:hover > img {
+    height: 450px;
+  }
+}
+#branding_sub div #arctic-foods-gallery .hidden {
   display: none;
-  position: relative;
 }
 #branding_sub div #phs-gif {
   display: flex;
@@ -1598,20 +1666,6 @@ header section #header-button > button {
 }
 #publications-sub div {
   grid-area: sub2;
-}
-@media (min-width: 1200px) {
-  #publications-sub div .carousel {
-    height: 700px;
-  }
-}
-#publications-sub div .carousel__slide {
-  width: 100%;
-  height: 100%;
-}
-@media (min-width: 1200px) {
-  #publications-sub div .carousel__slide {
-    height: 700px;
-  }
 }
 #publications-sub div h1 {
   background-color: #E3BCBA;
@@ -1672,8 +1726,26 @@ header section #header-button > button {
     padding: 8px 90px;
   }
 }
+#publications-sub div .carousel {
+  height: 400px;
+}
+@media (min-width: 768px) {
+  #publications-sub div .carousel {
+    height: 700px;
+  }
+}
+#publications-sub div .carousel__slide {
+  width: 100%;
+  height: 100%;
+}
+@media (min-width: 1200px) {
+  #publications-sub div .carousel__slide {
+    height: 700px;
+  }
+}
 #publications-sub div > ul {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   justify-content: center;
   align-items: center;
@@ -1684,12 +1756,12 @@ header section #header-button > button {
   align-items: center;
 }
 #publications-sub div > ul li img {
-  max-height: 700px;
-  padding: 16px;
+  max-height: 300px;
 }
 @media (min-width: 768px) {
   #publications-sub div > ul li img {
-    height: 50vw;
+    max-height: 700px;
+    padding: 16px;
   }
 }
 @media (min-width: 1200px) {
@@ -1699,31 +1771,31 @@ header section #header-button > button {
 }
 
 @media (min-width: 1200px) {
-  #posters-sub {
+  #posters_sub {
     display: grid;
     grid-template-areas: ". sub2 .";
     grid-template-columns: auto 1200px auto;
   }
 }
-#posters-sub div {
+#posters_sub div {
   grid-area: sub2;
 }
-#posters-sub div h1 {
+#posters_sub div h1 {
   background-color: #E3BCBA;
   margin: 20px 60px;
 }
 @media (min-width: 1024px) {
-  #posters-sub div h1 {
+  #posters_sub div h1 {
     font-size: 5.625rem;
   }
 }
 @media (min-width: 1200px) {
-  #posters-sub div h1 {
+  #posters_sub div h1 {
     margin-left: -5vw;
     margin-right: -5vw;
   }
 }
-#posters-sub div h2 {
+#posters_sub div h2 {
   font-size: 2.5rem;
   padding: 20px 40px;
   text-align: center;
@@ -1735,55 +1807,55 @@ header section #header-button > button {
   border-radius: 20px;
 }
 @media (min-width: 1024px) {
-  #posters-sub div h2 {
+  #posters_sub div h2 {
     font-size: 3.75rem;
   }
 }
-#posters-sub div h3 {
+#posters_sub div h3 {
   padding: 16px 40px;
 }
 @media (min-width: 1024px) {
-  #posters-sub div h3 {
+  #posters_sub div h3 {
     padding: 20px 20vw;
     font-size: 1.875rem;
   }
 }
 @media (min-width: 1200px) {
-  #posters-sub div h3 {
+  #posters_sub div h3 {
     padding: 20px 90px;
   }
 }
-#posters-sub div p {
+#posters_sub div p {
   padding: 0px 40px;
 }
 @media (min-width: 1024px) {
-  #posters-sub div p {
+  #posters_sub div p {
     padding: 8px 20vw;
     font-size: 1.25rem;
   }
 }
 @media (min-width: 1200px) {
-  #posters-sub div p {
+  #posters_sub div p {
     padding: 8px 90px;
   }
 }
-#posters-sub div > ul {
+#posters_sub div > ul {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: center;
 }
-#posters-sub div > ul li img {
+#posters_sub div > ul li img {
   width: 90vw;
   padding: 16px;
 }
 @media (min-width: 768px) {
-  #posters-sub div > ul li img {
+  #posters_sub div > ul li img {
     width: 40vw;
   }
 }
 @media (min-width: 1200px) {
-  #posters-sub div > ul li img {
+  #posters_sub div > ul li img {
     width: 500px;
   }
 }
@@ -1857,23 +1929,46 @@ header section #header-button > button {
     padding: 8px 90px;
   }
 }
+#photos-sub div .carousel {
+  height: 400px;
+}
+@media (min-width: 768px) {
+  #photos-sub div .carousel {
+    height: 700px;
+  }
+}
+#photos-sub div .carousel__slide {
+  width: 100%;
+  height: 100%;
+}
+@media (min-width: 1200px) {
+  #photos-sub div .carousel__slide {
+    height: 700px;
+  }
+}
 #photos-sub div > ul {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: center;
+  align-items: center;
+}
+#photos-sub div > ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 #photos-sub div > ul li img {
-  width: 90vw;
-  padding: 16px;
+  max-height: 300px;
 }
 @media (min-width: 768px) {
   #photos-sub div > ul li img {
-    width: 40vw;
+    max-height: 700px;
+    padding: 16px;
   }
 }
 @media (min-width: 1200px) {
   #photos-sub div > ul li img {
-    width: 500px;
+    height: 40vw;
   }
 }

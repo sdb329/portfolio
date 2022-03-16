@@ -1225,12 +1225,12 @@
       "oAP" : "\/dev\/content\/photos_sub.html",
       "oF" : 0
     },
-    "\/dev\/content\/posters_sub.kit" : {
+    "\/dev\/content\/posters_sub2.kit" : {
       "cB" : 0,
       "ft" : 2048,
       "hM" : 0,
       "oA" : 1,
-      "oAP" : "\/dev\/content\/posters_sub.html",
+      "oAP" : "\/dev\/content\/posters_sub2.html",
       "oF" : 0
     },
     "\/dev\/content\/publications_sub.kit" : {
@@ -1239,14 +1239,6 @@
       "hM" : 0,
       "oA" : 1,
       "oAP" : "\/dev\/content\/publications_sub.html",
-      "oF" : 0
-    },
-    "\/dev\/content\/type_soah.kit" : {
-      "cB" : 0,
-      "ft" : 2048,
-      "hM" : 0,
-      "oA" : 1,
-      "oAP" : "\/dev\/content\/type_soah.html",
       "oF" : 0
     },
     "\/dev\/content\/typography_sub.kit" : {
@@ -1319,28 +1311,6 @@
       "sC" : 3,
       "tS" : 0
     },
-    "\/dev\/js\/carousel-min.js" : {
-      "bF" : 0,
-      "ft" : 64,
-      "ma" : 0,
-      "mi" : 1,
-      "oA" : 0,
-      "oAP" : "\/dev\/js\/carousel-min-min.js",
-      "oF" : 0,
-      "sC" : 3,
-      "tS" : 0
-    },
-    "\/dev\/js\/menu-min.js" : {
-      "bF" : 0,
-      "ft" : 64,
-      "ma" : 0,
-      "mi" : 1,
-      "oA" : 0,
-      "oAP" : "\/dev\/js\/menu-min-min.js",
-      "oF" : 0,
-      "sC" : 3,
-      "tS" : 0
-    },
     "\/dev\/js\/menu.js" : {
       "bF" : 0,
       "ft" : 64,
@@ -1381,6 +1351,17 @@
       "mi" : 1,
       "oA" : 0,
       "oAP" : "\/deploy\/js\/scripts-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/dev\/js\/scrollAnimation.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 1,
+      "oAP" : "\/dev\/js\/scrollAnimation-min.js",
       "oF" : 0,
       "sC" : 3,
       "tS" : 0
@@ -1630,7 +1611,7 @@
       "pg" : 0,
       "sct" : 0
     },
-    "\/dev\/scss\/sections\/_posters.scss" : {
+    "\/dev\/scss\/sections\/_posters2.scss" : {
       "aP" : 0,
       "bl" : 0,
       "co" : 0,
@@ -1639,7 +1620,7 @@
       "ft" : 4,
       "ma" : 0,
       "oA" : 1,
-      "oAP" : "\/dev\/scss\/sections\/_posters.css",
+      "oAP" : "\/dev\/scss\/sections\/_posters2.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,
@@ -1655,21 +1636,6 @@
       "ma" : 0,
       "oA" : 1,
       "oAP" : "\/dev\/scss\/sections\/_publications.css",
-      "oF" : 0,
-      "oS" : 0,
-      "pg" : 0,
-      "sct" : 0
-    },
-    "\/dev\/scss\/sections\/_type_soah.scss" : {
-      "aP" : 0,
-      "bl" : 0,
-      "co" : 0,
-      "dP" : 10,
-      "ec" : 1,
-      "ft" : 4,
-      "ma" : 0,
-      "oA" : 1,
-      "oAP" : "\/dev\/scss\/sections\/_type_soah.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,
