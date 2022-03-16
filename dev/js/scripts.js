@@ -18,7 +18,7 @@ import { arrowJumpTL} from "./arrow-anim"
 
 import { sectionListners } from "./sectionMain"
 
-import { scrollAnimation, scrollAnimation2} from "./scrollAnimation"
+import { scrollAnimation, scrollAnimation2, scrollAnimation3, scrollAnimation4, scrollAnimation5, scrollAnimation6} from "./scrollAnimation"
 
 
 
@@ -155,7 +155,7 @@ window.addEventListener('resize', menuListners);
 window.addEventListener('load', displayWindowSize)
 window.addEventListener('resize', displayWindowSize)
 
-
+window.addEventListener('load', Fancybox)
 
 
 window.addEventListener('load', function(){
@@ -171,6 +171,18 @@ window.addEventListener('load', function(){
     scrollAnimation2(".scroll6", ".scroll6");
     scrollAnimation2(".scroll7", ".scroll7");
     scrollAnimation2(".scroll8", ".scroll8");
+    scrollAnimation2(".scroll9", ".scroll9");
+  
+
+    scrollAnimation3(".scroll-scale", ".scroll-scale");
+    scrollAnimation4(".scroll-scale2", ".scroll-scale2");
+    scrollAnimation5(".scroll-scale3", ".scroll-scale3");
+
+
+    scrollAnimation6(".scale-words", ".scale-words");
+    scrollAnimation6(".scale-words2", ".scale-words2");
+    scrollAnimation6(".scale-words3", ".scale-words3");
+    scrollAnimation6(".scale-words4", ".scale-words4");
   
 
 });

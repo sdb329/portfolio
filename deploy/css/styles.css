@@ -732,20 +732,25 @@ header section #header-button > button {
     grid-area: contain;
   }
 }
-#footer > div > h1 {
-  margin-bottom: 40px;
+#footer > div > svg {
+  margin-bottom: -200px;
   margin-top: 40px;
-  background-color: #E7DFD7;
+  border-radius: 100%;
+}
+@media (min-width: 768px) {
+  #footer > div > svg {
+    margin-bottom: -370px;
+  }
 }
 @media (min-width: 1024px) {
-  #footer > div > h1 {
+  #footer > div > svg {
+    margin-bottom: -500px;
     font-size: 5.625rem;
-    margin-bottom: 60px;
   }
 }
 @media (min-width: 1200px) {
-  #footer > div > h1 {
-    margin-bottom: 100px;
+  #footer > div > svg {
+    grid-area: contain;
   }
 }
 #footer > div > div {
@@ -836,21 +841,25 @@ header section #header-button > button {
     grid-area: contain;
   }
 }
-#about_me > div > h1 {
-  text-align: center;
-  margin-bottom: 40px;
-  margin-top: 40px;
-  background-color: #E3BCBA;
+#about_me > div > svg {
+  margin-bottom: -200px;
+  margin-top: 100px;
+  border-radius: 100%;
+}
+@media (min-width: 768px) {
+  #about_me > div > svg {
+    margin-bottom: -370px;
+  }
 }
 @media (min-width: 1024px) {
-  #about_me > div > h1 {
+  #about_me > div > svg {
+    margin-bottom: -500px;
     font-size: 5.625rem;
-    margin-bottom: 60px;
   }
 }
 @media (min-width: 1200px) {
-  #about_me > div > h1 {
-    margin-bottom: 100px;
+  #about_me > div > svg {
+    grid-area: contain;
   }
 }
 #about_me > div #intro-image {
@@ -930,18 +939,24 @@ header section #header-button > button {
     grid-template-columns: auto 1200px auto;
   }
 }
-#my-work > div > h1 {
-  margin-bottom: 40px;
+#my-work > div > svg {
+  margin-bottom: -200px;
   margin-top: 40px;
-  background-color: #9CB0A7;
+  border-radius: 100%;
+}
+@media (min-width: 768px) {
+  #my-work > div > svg {
+    margin-bottom: -370px;
+  }
 }
 @media (min-width: 1024px) {
-  #my-work > div > h1 {
+  #my-work > div > svg {
+    margin-bottom: -500px;
     font-size: 5.625rem;
   }
 }
 @media (min-width: 1200px) {
-  #my-work > div > h1 {
+  #my-work > div > svg {
     grid-area: contain;
   }
 }
@@ -1322,35 +1337,43 @@ header section #header-button > button {
 #typpgraphy-sub div {
   grid-area: sub2;
 }
-#typpgraphy-sub div h1 {
-  background-color: #E3BCBA;
-  margin: 20px 60px;
+#typpgraphy-sub div > svg {
+  margin-bottom: -150px;
+  margin-top: 100px;
+  border-radius: 100%;
+}
+@media (min-width: 768px) {
+  #typpgraphy-sub div > svg {
+    margin-bottom: -200px;
+  }
 }
 @media (min-width: 1024px) {
-  #typpgraphy-sub div h1 {
+  #typpgraphy-sub div > svg {
+    margin-bottom: -300px;
     font-size: 5.625rem;
   }
 }
 @media (min-width: 1200px) {
-  #typpgraphy-sub div h1 {
-    margin-left: -5vw;
-    margin-right: -5vw;
+  #typpgraphy-sub div > svg {
+    grid-area: contain;
   }
 }
 #typpgraphy-sub div h2 {
-  font-size: 2.5rem;
+  font-size: 3.75rem;
+  line-height: 1.5;
   padding: 20px 40px;
   text-align: center;
   font-weight: 400;
-  border-top: 1px #112E3E solid;
-  border-bottom: 1px #112E3E solid;
   margin: 0px 16px;
-  background-color: #9CB0A7;
-  border-radius: 20px;
+  border-radius: 100px;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 @media (min-width: 1024px) {
   #typpgraphy-sub div h2 {
-    font-size: 3.75rem;
+    font-size: 6.25rem;
   }
 }
 #typpgraphy-sub div h3 {
@@ -1398,6 +1421,20 @@ header section #header-button > button {
     height: 700px;
   }
 }
+#typpgraphy-sub div > div .carousel__slide img {
+  max-height: 300px;
+}
+@media (min-width: 768px) {
+  #typpgraphy-sub div > div .carousel__slide img {
+    max-height: 700px;
+    padding: 16px;
+  }
+}
+@media (min-width: 1200px) {
+  #typpgraphy-sub div > div .carousel__slide img {
+    height: 40vw;
+  }
+}
 #typpgraphy-sub div > div > ul {
   display: flex;
   flex-wrap: wrap;
@@ -1409,20 +1446,6 @@ header section #header-button > button {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-#typpgraphy-sub div > div > ul li img {
-  max-height: 300px;
-}
-@media (min-width: 768px) {
-  #typpgraphy-sub div > div > ul li img {
-    max-height: 700px;
-    padding: 16px;
-  }
-}
-@media (min-width: 1200px) {
-  #typpgraphy-sub div > div > ul li img {
-    height: 40vw;
-  }
 }
 #typpgraphy-sub div > div #gif-sj-flex {
   display: flex;
@@ -1476,13 +1499,16 @@ header section #header-button > button {
 #typpgraphy-sub div > div #soah-gallery .hidden {
   display: none;
 }
+#typpgraphy-sub div > div #souvenir-gallery > li {
+  padding: 16px;
+}
 #typpgraphy-sub div > div #souvenir-gallery > li > img {
-  height: 250px;
+  width: 70vw;
   transition: 0.5s;
 }
 @media (min-width: 768px) {
   #typpgraphy-sub div > div #souvenir-gallery > li > img {
-    height: 400px;
+    width: 600px;
   }
 }
 
@@ -1496,35 +1522,43 @@ header section #header-button > button {
 #branding_sub div {
   grid-area: sub2;
 }
-#branding_sub div h1 {
-  background-color: #E3BCBA;
-  margin: 20px 60px;
+#branding_sub div > svg {
+  margin-bottom: -200px;
+  margin-top: 100px;
+  border-radius: 100%;
+}
+@media (min-width: 768px) {
+  #branding_sub div > svg {
+    margin-bottom: -370px;
+  }
 }
 @media (min-width: 1024px) {
-  #branding_sub div h1 {
+  #branding_sub div > svg {
+    margin-bottom: -500px;
     font-size: 5.625rem;
   }
 }
 @media (min-width: 1200px) {
-  #branding_sub div h1 {
-    margin-left: -5vw;
-    margin-right: -5vw;
+  #branding_sub div > svg {
+    grid-area: contain;
   }
 }
 #branding_sub div h2 {
-  font-size: 2.5rem;
+  font-size: 3.75rem;
+  line-height: 1.5;
   padding: 20px 40px;
   text-align: center;
   font-weight: 400;
-  border-top: 1px #112E3E solid;
-  border-bottom: 1px #112E3E solid;
   margin: 0px 16px;
-  background-color: #9CB0A7;
-  border-radius: 20px;
+  border-radius: 100px;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 @media (min-width: 1024px) {
   #branding_sub div h2 {
-    font-size: 3.75rem;
+    font-size: 6.25rem;
   }
 }
 #branding_sub div h3 {
@@ -1667,35 +1701,43 @@ header section #header-button > button {
 #publications-sub div {
   grid-area: sub2;
 }
-#publications-sub div h1 {
-  background-color: #E3BCBA;
-  margin: 20px 60px;
+#publications-sub div > svg {
+  margin-bottom: -150px;
+  margin-top: 100px;
+  border-radius: 100%;
+}
+@media (min-width: 768px) {
+  #publications-sub div > svg {
+    margin-bottom: -200px;
+  }
 }
 @media (min-width: 1024px) {
-  #publications-sub div h1 {
+  #publications-sub div > svg {
+    margin-bottom: -300px;
     font-size: 5.625rem;
   }
 }
 @media (min-width: 1200px) {
-  #publications-sub div h1 {
-    margin-left: -5vw;
-    margin-right: -5vw;
+  #publications-sub div > svg {
+    grid-area: contain;
   }
 }
 #publications-sub div h2 {
-  font-size: 2.5rem;
+  font-size: 3.75rem;
+  line-height: 1.5;
   padding: 20px 40px;
   text-align: center;
   font-weight: 400;
-  border-top: 1px #112E3E solid;
-  border-bottom: 1px #112E3E solid;
   margin: 0px 16px;
-  background-color: #9CB0A7;
-  border-radius: 20px;
+  border-radius: 100px;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 @media (min-width: 1024px) {
   #publications-sub div h2 {
-    font-size: 3.75rem;
+    font-size: 6.25rem;
   }
 }
 #publications-sub div h3 {
@@ -1770,6 +1812,9 @@ header section #header-button > button {
   }
 }
 
+#posters_sub .hidden {
+  display: none;
+}
 @media (min-width: 1200px) {
   #posters_sub {
     display: grid;
@@ -1780,35 +1825,43 @@ header section #header-button > button {
 #posters_sub div {
   grid-area: sub2;
 }
-#posters_sub div h1 {
-  background-color: #E3BCBA;
-  margin: 20px 60px;
+#posters_sub div > svg {
+  margin-bottom: -200px;
+  margin-top: 100px;
+  border-radius: 100%;
+}
+@media (min-width: 768px) {
+  #posters_sub div > svg {
+    margin-bottom: -370px;
+  }
 }
 @media (min-width: 1024px) {
-  #posters_sub div h1 {
+  #posters_sub div > svg {
+    margin-bottom: -500px;
     font-size: 5.625rem;
   }
 }
 @media (min-width: 1200px) {
-  #posters_sub div h1 {
-    margin-left: -5vw;
-    margin-right: -5vw;
+  #posters_sub div > svg {
+    grid-area: contain;
   }
 }
 #posters_sub div h2 {
-  font-size: 2.5rem;
+  font-size: 3.75rem;
+  line-height: 1.5;
   padding: 20px 40px;
   text-align: center;
   font-weight: 400;
-  border-top: 1px #112E3E solid;
-  border-bottom: 1px #112E3E solid;
   margin: 0px 16px;
-  background-color: #9CB0A7;
-  border-radius: 20px;
+  border-radius: 100px;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 @media (min-width: 1024px) {
   #posters_sub div h2 {
-    font-size: 3.75rem;
+    font-size: 6.25rem;
   }
 }
 #posters_sub div h3 {
@@ -1870,35 +1923,43 @@ header section #header-button > button {
 #photos-sub div {
   grid-area: sub2;
 }
-#photos-sub div h1 {
-  background-color: #E3BCBA;
-  margin: 20px 60px;
+#photos-sub div > svg {
+  margin-bottom: -200px;
+  margin-top: 100px;
+  border-radius: 100%;
+}
+@media (min-width: 768px) {
+  #photos-sub div > svg {
+    margin-bottom: -370px;
+  }
 }
 @media (min-width: 1024px) {
-  #photos-sub div h1 {
+  #photos-sub div > svg {
+    margin-bottom: -500px;
     font-size: 5.625rem;
   }
 }
 @media (min-width: 1200px) {
-  #photos-sub div h1 {
-    margin-left: -5vw;
-    margin-right: -5vw;
+  #photos-sub div > svg {
+    grid-area: contain;
   }
 }
 #photos-sub div h2 {
-  font-size: 2.5rem;
+  font-size: 3.75rem;
+  line-height: 1.5;
   padding: 20px 40px;
   text-align: center;
   font-weight: 400;
-  border-top: 1px #112E3E solid;
-  border-bottom: 1px #112E3E solid;
   margin: 0px 16px;
-  background-color: #9CB0A7;
-  border-radius: 20px;
+  border-radius: 100px;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 @media (min-width: 1024px) {
   #photos-sub div h2 {
-    font-size: 3.75rem;
+    font-size: 6.25rem;
   }
 }
 #photos-sub div h3 {

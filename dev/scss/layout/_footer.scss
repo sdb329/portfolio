@@ -21,21 +21,32 @@
 	
 	
 
-	>h1{
-		margin-bottom: 40px;
-        margin-top: 40px;
-		background-color: $tan;
+		>svg{
+            margin-bottom: -200px;
+            margin-top: 40px;
+            // background-color: $sage;
+            border-radius: 100%;
 
-		@include lg{
-            font-size: rem-calc(90);
-			margin-bottom: 60px ;
+            @include md{
+                margin-bottom: -370px;
+            }
+    
+            @include lg{
+                margin-bottom: -500px;
+                font-size: rem-calc(90);
+            }
+
+            @include xl {
+                grid-area: contain;
+
+        
+                
+     
+                 
+            
+        
+            }
         }
-
-		@include xl{
-			margin-bottom: 100px ;
-
-		}
-	}
 
 
 >div{

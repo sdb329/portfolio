@@ -11,34 +11,60 @@
     div{
         grid-area: sub2;
 
-        h1{
-            background-color: $pink;
-            margin: 20px 60px;
+        >svg{
+            margin-bottom: -200px;
+            margin-top: 100px;
+            // background-color: $sage;
+            border-radius: 100%;
 
+            @include md{
+                margin-bottom: -370px;
+            }
+    
             @include lg{
+                margin-bottom: -500px;
                 font-size: rem-calc(90);
             }
-            @include xl{
-                margin-left: -5vw;
-                margin-right: -5vw;
+
+            @include xl {
+                grid-area: contain;
+
+        
+                
+     
+                 
+            
+        
             }
         }
     
-            h2{
-                font-size: rem-calc(40);
-                padding: 20px 40px;
-                text-align: center;
-                font-weight: 400;
-                border-top: 1px $darkgray solid;
-                border-bottom: 1px $darkgray solid;
-                margin: 0px 16px;
-                background-color: $sage;
-                border-radius: 20px;
+        h2{
+            font-size: rem-calc(60);
+            line-height: 1.5;
 
-                @include lg{
-                    font-size: rem-calc(60);
-                }
+            padding: 20px 40px;
+            text-align: center;
+            font-weight: 400;
+          
+            margin: 0px 16px;
+  
+      
+            border-radius: 100px;
+
+            height: 80vh;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            @include lg{
+                font-size: rem-calc(100);
+
+   
             }
+
+           
+        }
     
             h3{
                 padding: 16px 40px;

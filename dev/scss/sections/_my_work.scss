@@ -18,12 +18,18 @@
     
         }
        
-        >h1{
-            margin-bottom: 40px;
+        >svg{
+            margin-bottom: -200px;
             margin-top: 40px;
-            background-color: $sage;
+            // background-color: $sage;
+            border-radius: 100%;
+
+            @include md{
+                margin-bottom: -370px;
+            }
     
             @include lg{
+                margin-bottom: -500px;
                 font-size: rem-calc(90);
             }
 
