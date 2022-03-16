@@ -1611,7 +1611,7 @@
       "pg" : 0,
       "sct" : 0
     },
-    "\/dev\/scss\/sections\/_posters2.scss" : {
+    "\/dev\/scss\/sections\/_posters.scss" : {
       "aP" : 0,
       "bl" : 0,
       "co" : 0,
@@ -1620,7 +1620,7 @@
       "ft" : 4,
       "ma" : 0,
       "oA" : 1,
-      "oAP" : "\/dev\/scss\/sections\/_posters2.css",
+      "oAP" : "\/dev\/scss\/sections\/_posters.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,
