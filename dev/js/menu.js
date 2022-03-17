@@ -5,7 +5,7 @@ let navButtonsAnimate = document.querySelectorAll(".nav-grow");
 
 
 
-console.log(navButtonsAnimate.length);
+// console.log(navButtonsAnimate.length);
 
 
 
@@ -20,7 +20,7 @@ console.log(navButtonsAnimate.length);
 export function menuListners (){
 
     
-    console.log("working");
+    // console.log("working");
     if(window.innerWidth <= 1024){
 
         // when the width of the window is below 1048px, the navgiation will grow and change to 100vw

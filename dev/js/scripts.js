@@ -62,7 +62,7 @@ burgerButton.addEventListener("click", sectionListners)
 burgerButton.addEventListener("click", menuListners)
 
 let navButtons = document.querySelectorAll(".nav-btns");
-console.log(navButtons);
+// console.log(navButtons);
 
 for (const button of navButtons){
     button.addEventListener("click", openCloseMenu)

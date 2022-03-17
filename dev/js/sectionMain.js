@@ -14,7 +14,7 @@ let imageAppear = document.querySelectorAll(".my-work-img");
 
 
 
-console.log(sectionsAnimate.length + " is the length of the main sections");
+// console.log(sectionsAnimate.length + " is the length of the main sections");
 
 
 gsap.set(".my-work-img",{alpha:0});
@@ -26,14 +26,14 @@ bottomTL.to("#bottom",{duration:0.25, drawSVG: "47% 100%"})
 
 function rotationSetting(){
     gsap.set(".click-me-type",{rotation:0});
-    console.log("yo");
+    // console.log("yo");
 
 }
 
 export function sectionListners(){
 
     
-    console.log("working");
+    // console.log("working");
     if(window.innerWidth <= 1048){
 
         sectionsAnimate.forEach((link, i) =>{
