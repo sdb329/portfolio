@@ -406,7 +406,7 @@ p {
 
 p,
 input,
-textaddress,
+textarea,
 address,
 h6 {
   font-family: "Nanum Gothic", sans-serif;
@@ -1366,7 +1366,7 @@ header section #header-button > button {
   font-weight: 400;
   margin: 0px 16px;
   border-radius: 100px;
-  height: 80vh;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1469,12 +1469,42 @@ header section #header-button > button {
   padding: 16px;
   text-align: center;
 }
+@media (min-width: 768px) {
+  #typpgraphy-sub div > div #soah-video #soah-video2 {
+    height: 500px;
+  }
+}
+@media (min-width: 1024px) {
+  #typpgraphy-sub div > div #soah-video #soah-video2 {
+    height: 700px;
+  }
+}
 #typpgraphy-sub div > div #aesops-fables > li > a > img {
   height: 250px;
   transition: 0.5s;
 }
+@media (min-width: 768px) {
+  #typpgraphy-sub div > div #aesops-fables > li > a > img {
+    height: 300px;
+  }
+}
+@media (min-width: 1024px) {
+  #typpgraphy-sub div > div #aesops-fables > li > a > img {
+    height: 500px;
+  }
+}
 #typpgraphy-sub div > div #aesops-fables > li > a:hover > img {
   height: 300px;
+}
+@media (min-width: 768px) {
+  #typpgraphy-sub div > div #aesops-fables > li > a:hover > img {
+    height: 350px;
+  }
+}
+@media (min-width: 1024px) {
+  #typpgraphy-sub div > div #aesops-fables > li > a:hover > img {
+    height: 600px;
+  }
 }
 #typpgraphy-sub div > div #aesops-fables .hidden {
   display: none;
@@ -1482,10 +1512,16 @@ header section #header-button > button {
 #typpgraphy-sub div > div #soah-gallery > li > a > img {
   height: 250px;
   transition: 0.5s;
+  padding: 20px;
 }
 @media (min-width: 768px) {
   #typpgraphy-sub div > div #soah-gallery > li > a > img {
     height: 400px;
+  }
+}
+@media (min-width: 1024px) {
+  #typpgraphy-sub div > div #soah-gallery > li > a > img {
+    height: 500px;
   }
 }
 #typpgraphy-sub div > div #soah-gallery > li > a:hover > img {
@@ -1494,6 +1530,11 @@ header section #header-button > button {
 @media (min-width: 768px) {
   #typpgraphy-sub div > div #soah-gallery > li > a:hover > img {
     height: 450px;
+  }
+}
+@media (min-width: 768px) {
+  #typpgraphy-sub div > div #soah-gallery > li > a:hover > img {
+    height: 600px;
   }
 }
 #typpgraphy-sub div > div #soah-gallery .hidden {
@@ -1551,7 +1592,7 @@ header section #header-button > button {
   font-weight: 400;
   margin: 0px 16px;
   border-radius: 100px;
-  height: 80vh;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1684,11 +1725,31 @@ header section #header-button > button {
   flex-direction: row;
   justify-content: center;
 }
+@media (min-width: 768px) {
+  #branding_sub div #af-video {
+    height: 500px;
+  }
+}
+@media (min-width: 1024px) {
+  #branding_sub div #af-video {
+    height: 700px;
+  }
+}
 #branding_sub div #af-video #af-video2 {
   grid-area: video;
   width: 90vw;
   padding: 16px;
   text-align: center;
+}
+@media (min-width: 768px) {
+  #branding_sub div #af-video #af-video2 {
+    height: 500px;
+  }
+}
+@media (min-width: 1024px) {
+  #branding_sub div #af-video #af-video2 {
+    height: 700px;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -1730,7 +1791,7 @@ header section #header-button > button {
   font-weight: 400;
   margin: 0px 16px;
   border-radius: 100px;
-  height: 80vh;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1854,7 +1915,7 @@ header section #header-button > button {
   font-weight: 400;
   margin: 0px 16px;
   border-radius: 100px;
-  height: 80vh;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1952,7 +2013,7 @@ header section #header-button > button {
   font-weight: 400;
   margin: 0px 16px;
   border-radius: 100px;
-  height: 80vh;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;

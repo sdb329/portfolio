@@ -62,7 +62,7 @@
           
                 border-radius: 100px;
 
-                height: 80vh;
+                height: 100vh;
 
                 display: flex;
                 justify-content: center;
@@ -216,6 +216,13 @@
                         width: 90vw;
                         padding: 16px;
                         text-align: center;
+
+                        @include md{
+                            height: 500px;
+                        }
+                        @include lg{
+                            height: 700px;
+                        }
                     }
                     
                 }
@@ -224,14 +231,37 @@
                     >li{
                         >a{
                             >img{
+                                
                                 height: 250px;
                                 transition: 0.5s;
+
+
+                                @include md{
+                                    height: 300px;
+                                }
+                                @include lg{
+                                    height: 500px;
+                                }
                             }
                            
 
                             &:hover{
                                 >img{
-                                    height: 300px;
+
+                                    
+                                        height: 300px;
+                                    
+                                    
+
+
+                                       
+                                    @include md{
+                                        height: 350px;
+                                    }
+
+                                    @include lg{
+                                        height: 600px;
+                                    }
                                 }
                             }
                            
@@ -247,10 +277,16 @@
                         >a{
                             >img{
                                 height: 250px;
+                                
                                 transition: 0.5s;
+
+                                padding: 20px;
 
                                 @include md{
                                     height: 400px;
+                                }
+                                @include lg{
+                                    height: 500px;
                                 }
                             }
                            
@@ -261,6 +297,10 @@
                                     
                                     @include md{
                                         height: 450px;
+                                    }
+
+                                    @include md{
+                                        height: 600px;
                                     }
                                 }
                             }

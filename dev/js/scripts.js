@@ -145,7 +145,7 @@ window.addEventListener('resize', sectionListners);
 
 
 window.addEventListener('load', mainCarousel);
-
+window.addEventListener('resize', mainCarousel);
 
 
 
