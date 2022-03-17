@@ -68,33 +68,23 @@
 
            
             .my-work-img{
-                // width: 100vw;
-                
                 display: none;
-                // margin-left: 100px
             }
 
-          
-
-            // .img-move2{
-            //     margin-right: 100px;
-            // }
-
-        
           .click-me-svg{
-            //   background-color: green;
+
             width: 37vw;
             margin-bottom: -130px;
-            // position: sticky;
+
 
           
           }
 
           .click-me-svg2{
-            //   background-color: green;
+
             width: 37vw;
             margin-bottom: -130px;
-            // position: sticky;
+
 
            
           }
@@ -102,16 +92,16 @@
 
           @include md{
             .click-me-svg{
-                //   background-color: green;
+
                 width: 30vw;
                 margin-bottom: -170px;
-                // position: sticky;
+
               }
               .click-me-svg2{
-                //   background-color: green;
+
                 width: 30vw;
                 margin-bottom: -170px;
-                // position: sticky;
+
               }
           }
 
@@ -158,9 +148,7 @@
                     .color1{
                         background-color: $pink;
                         height: 600px;
-                        // width: 1200px;
                         grid-area: left;
-                        // width: 100vw;
 
                       
                     }
@@ -182,10 +170,8 @@
                         }
                         @include xl{
                             .click-me-svg{
-                                //   background-color: green;
                                 width: 500px;
                                 margin-bottom: -350px;
-                                // position: sticky;
                               }
                             
                           }
@@ -204,16 +190,13 @@
                        .img-resize{
 
                         padding: 0px;
-
-                        
-                           width: 200px;
+                        width: 200px;
                        }
 
                        @include xl{
                         .img-resize{
                             padding: 0px;
-                            // margin-left: 500px;
-                               width: 400px;
+                            width: 400px;
                            }
                        }
                     }
@@ -254,14 +237,9 @@
 
                         display: flex;
                         justify-content: flex-end;
-                        // background-color: $pink;
                         .color2{
                             background-color: $sage;
                             height: 600px;
-                            // width: 1200px;
-                            // grid-area: left;
-                            // width: 100vw;
-    
                           
                         }
 
@@ -294,10 +272,8 @@
                             }
                             @include xl{
                                 .click-me-svg{
-                                    //   background-color: green;
                                     width: 500px;
                                     margin-bottom: -350px;
-                                    // position: sticky;
                                   }
                                 
                               }
@@ -351,7 +327,6 @@
                     .color3{
                         background-color: $tan;
                         height: 600px;
-                        // width: 1200px;
                         grid-area: left;
                     }
                     .type-words-total{
@@ -369,11 +344,8 @@
                         }
                         @include xl{
                             .click-me-svg{
-                                //   background-color: green;
-                           
                                 width: 500px;
                                 margin-bottom: -350px;
-                                // position: sticky;
                               }
                             
                           }
@@ -432,18 +404,12 @@
                         grid-area: onTop;
                        
                         text-align: right;
-                        // grid-area: right;?\
-
-                        text-align: right;
-
                         display: flex;
                         justify-content: flex-end;
-                        // background-color: $pink;
 
                         .color4{
                             background-color: $pink;
                             height: 600px;
-                            // width: 1200px;
                         }
                     }
 
@@ -471,11 +437,9 @@
                         }
                         @include xl{
                             .click-me-svg{
-                                //   background-color: green;
                            
                                 width: 500px;
                                 margin-bottom: -350px;
-                                // position: sticky;
                               }
                             
                           }
@@ -532,7 +496,6 @@
                     .color5{
                         background-color: $sage;
                         height: 600px;
-                        // width: 1200px;
                         grid-area: left;
                     }
                     .type-words-total{
@@ -550,11 +513,9 @@
                         }
                         @include xl{
                             .click-me-svg{
-                                //   background-color: green;
                            
                                 width: 500px;
                                 margin-bottom: -350px;
-                                // position: sticky;
                               }
                             
                           }

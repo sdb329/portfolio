@@ -33,10 +33,6 @@
 			flex-direction: column;
 			justify-content: center;
 			align-items: center;
-			// &:hover{
-			// 	background-color: $pink;
-			// 	width: 100vw;
-			// }
 			@include md {
 				padding: 30px 0px;
 			}
@@ -69,7 +65,6 @@
 						padding:0px;
 						font-size: rem-calc(22);
 					}
-					// width: 20vw;
 				}
 			}
 		}

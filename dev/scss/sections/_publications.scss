@@ -17,7 +17,6 @@
         >svg{
             margin-bottom: -150px;
             margin-top: 100px;
-            // background-color: $sage;
             border-radius: 100%;
 
             @include md{
@@ -103,11 +102,11 @@
     
             .carousel{
 
-                height: 400px;
+                height: 600px;
 
                 
                 @include md{
-                    height: 700px;
+                    height: 800px;
                  }
     
             }
@@ -119,8 +118,7 @@
     
     
              @include xl{
-                // width: 10%;
-                height: 700px;
+                height: 800px;
              }
            }
   
@@ -133,7 +131,6 @@
             align-items: center;
     
             li{
-                // width: 40vw;
 
                 display: flex;
                 justify-content: center;

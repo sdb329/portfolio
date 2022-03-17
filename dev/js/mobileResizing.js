@@ -36,46 +36,5 @@ export function displayWindowSize(){
 
 
 
-    // if(document.documentElement.clientWidth <= 1024){
-    //     gsap.set(".nav-btns-li", {x:menuHeight,
-            
-    //         alpha:0
-        
-    //     })
-    //     gsap.set("#nav-container", {x:menuHeight,
-    //         alpha: 1
-        
-    //     })
-    //     gsap.set(".stagger-in-nav", {
-            
-    //         alpha:0
-        
-    //     })
-    //     gsap.set(".nav-svg-full", {
-            
-    //         alpha:1
-        
-    //     })
-
-
-        
-    
-        
-    // }else{
-    //     gsap.set(".nav-btns-li",{x:0,
-    //     alpha:1})
-
-    //     gsap.set("#nav-container", {x:0
-        
-    //     })
-
-    //     gsap.set(".stagger-in-nav", {
-    //         alpha:1
-    //     })
-    //     gsap.set(".nav-svg-full", {
-            
-    //         alpha:1
-        
-    //     })
-    // }
+  
 }

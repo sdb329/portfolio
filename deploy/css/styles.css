@@ -1212,7 +1212,6 @@ header section #header-button > button {
   #my-work ul #posters-main > a .color-flex {
     grid-area: onTop;
     text-align: right;
-    text-align: right;
     display: flex;
     justify-content: flex-end;
   }
@@ -1839,11 +1838,11 @@ header section #header-button > button {
   }
 }
 #publications-sub div .carousel {
-  height: 400px;
+  height: 600px;
 }
 @media (min-width: 768px) {
   #publications-sub div .carousel {
-    height: 700px;
+    height: 800px;
   }
 }
 #publications-sub div .carousel__slide {
@@ -1852,7 +1851,7 @@ header section #header-button > button {
 }
 @media (min-width: 1200px) {
   #publications-sub div .carousel__slide {
-    height: 700px;
+    height: 800px;
   }
 }
 #publications-sub div > ul {

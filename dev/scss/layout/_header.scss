@@ -99,8 +99,6 @@ header {
 			}
 		}
 		#nav-container {
-			// background-color: $darkblue;
-			// display: none;
 			z-index: 3;
 			position: fixed;
 			width: 100vw;
@@ -111,7 +109,6 @@ header {
 			
 
 			@include lg {
-				// background-color: $darkblue;
 				display: block !important;
 				position: static;
 				height: 32px;

@@ -14,7 +14,6 @@
         >svg{
             margin-bottom: -200px;
             margin-top: 100px;
-            // background-color: $sage;
             border-radius: 100%;
 
             @include md{
@@ -113,7 +112,6 @@
     
     
              @include xl{
-                // width: 10%;
                 height: 700px;
              }
            }
@@ -133,8 +131,6 @@
             }
     
             li{
-                // width: 40vw;
-
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -222,10 +218,6 @@
 
 
             #phs-logo{
-
-                // display: grid;
-                // grid-template-areas: ". video .";
-                // grid-template-columns: 25px auto 16px;
                 display: flex;
                 flex-wrap: wrap;
                 flex-direction: row;
@@ -239,10 +231,6 @@
                 
             }
             #af-video{
-
-                // display: grid;
-                // grid-template-areas: ". video .";
-                // grid-template-columns: 25px auto 16px;
                 display: flex;
                 flex-wrap: wrap;
                 flex-direction: row;

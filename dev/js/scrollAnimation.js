@@ -76,12 +76,7 @@ export function scrollAnimation3(animationElement, triggerElement){
         
 
         { 
- 
 
-
-
-
-            // alpha: 0,
             scale: 1
         },
         
@@ -91,16 +86,11 @@ export function scrollAnimation3(animationElement, triggerElement){
                 scale: 1,
                 rotate: 180,
                 transformOrigin: "50% 50%",
-                // stagger: 2,
                 duration: 2,
        
                 scrollTrigger: {
                     trigger: triggerElement,
-                    // start: "top 25%",
-                    // end: "top 20%",
                     toggleActions: "restart none resume none",
-                    // pin: true,
-                    // markers: true,
                     scrub: 3
                 }
             });

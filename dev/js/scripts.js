@@ -2,7 +2,6 @@
 
 
 
-// import { scrollAnimation, scrollAnimation2, scrollAnimationButton1 } from "./scrollAnimation"
 
 import { Carousel, Fancybox } from "@fancyapps/ui";
 
@@ -71,35 +70,6 @@ for (const button of navButtons){
     button.addEventListener("click", menuListners)
 }
 
-// for(let i = 0; i < navButtons.length; i++){
-//     navButtons[i].addEventListener("click", openCloseMenu)
-// }
-
-// burgerButton.addEventListener("click", () =>{
-    
-//     console.log("burger clicked");
-
-    
-
-//     if(canISeeMenu === false) {
-//         burgerTL.play();
-//         circleTL.play();
-//         burgerJumpTL.play();
-
-//         menuAnimation.play();
-//         screenLocker();
-//         canISeeMenu = true;
-        
-//     }else{
-//         burgerTL.reverse();
-//         circleTL.reverse();
-//         burgerJumpTL.pause();
-//         menuAnimation.reverse();
-//         screenLocker();
-//         canISeeMenu = false;
-
-//     }
-// });
 
 
 
