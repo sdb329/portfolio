@@ -1482,6 +1482,7 @@ header section #header-button > button {
 #typpgraphy-sub div > div #aesops-fables > li > a > img {
   height: 250px;
   transition: 0.5s;
+  padding: 40px;
 }
 @media (min-width: 768px) {
   #typpgraphy-sub div > div #aesops-fables > li > a > img {
@@ -1512,7 +1513,10 @@ header section #header-button > button {
 #typpgraphy-sub div > div #soah-gallery > li > a > img {
   height: 250px;
   transition: 0.5s;
-  padding: 20px;
+  padding-top: 40px;
+  padding-bottom: 16px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 @media (min-width: 768px) {
   #typpgraphy-sub div > div #soah-gallery > li > a > img {
@@ -1546,6 +1550,7 @@ header section #header-button > button {
 #typpgraphy-sub div > div #souvenir-gallery > li > img {
   width: 70vw;
   transition: 0.5s;
+  padding-top: 40px;
 }
 @media (min-width: 768px) {
   #typpgraphy-sub div > div #souvenir-gallery > li > img {
@@ -1664,6 +1669,10 @@ header section #header-button > button {
 }
 #branding_sub div > ul li img {
   max-height: 300px;
+  padding-top: 40px;
+  padding-bottom: 16px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 @media (min-width: 768px) {
   #branding_sub div > ul li img {
@@ -1961,7 +1970,10 @@ header section #header-button > button {
 }
 #posters_sub div > ul li img {
   width: 90vw;
-  padding: 16px;
+  padding-top: 40px;
+  padding-bottom: 16px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 @media (min-width: 768px) {
   #posters_sub div > ul li img {
@@ -1970,7 +1982,7 @@ header section #header-button > button {
 }
 @media (min-width: 1200px) {
   #posters_sub div > ul li img {
-    width: 500px;
+    width: 800px;
   }
 }
 
@@ -2004,6 +2016,12 @@ header section #header-button > button {
   #photos-sub div > svg {
     grid-area: contain;
   }
+}
+#photos-sub div > ul > li > img {
+  padding-top: 40px;
+  padding-bottom: 16px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 #photos-sub div h2 {
   font-size: 3.75rem;

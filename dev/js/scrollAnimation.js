@@ -101,7 +101,7 @@ export function scrollAnimation3(animationElement, triggerElement){
                     toggleActions: "restart none resume none",
                     // pin: true,
                     // markers: true,
-                    scrub: 1
+                    scrub: 3
                 }
             });
 

@@ -143,10 +143,12 @@
                         max-height: 300px;
 
                    
+                   
 
                     @include md{
                         max-height: 700px;
-                    padding: 16px;
+                        padding: 16px;
+                  
                     }
 
                     @include xl{
@@ -234,6 +236,7 @@
                                 
                                 height: 250px;
                                 transition: 0.5s;
+                                padding: 40px;
 
 
                                 @include md{
@@ -251,7 +254,7 @@
                                     
                                         height: 300px;
                                     
-                                    
+                                        
 
 
                                        
@@ -280,7 +283,10 @@
                                 
                                 transition: 0.5s;
 
-                                padding: 20px;
+                                padding-top: 40px;
+                                padding-bottom: 16px;
+                                padding-left: 10px;
+                                padding-right: 10px;
 
                                 @include md{
                                     height: 400px;
@@ -320,6 +326,8 @@
                         >img{
                             width: 70vw;
                             transition: 0.5s;
+                            padding-top: 40px;
+                            // padding-bottom: 16px;
 
                             @include md{
                                 width: 600px;

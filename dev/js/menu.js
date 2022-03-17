@@ -21,14 +21,14 @@ export function menuListners (){
 
     
     console.log("working");
-    if(window.innerWidth <= 1048){
+    if(window.innerWidth <= 1024){
 
         // when the width of the window is below 1048px, the navgiation will grow and change to 100vw
 
             navButtonsAnimate.forEach((link, i) =>{
 
                 link.addEventListener("mouseenter", ()=>{
-                    gsap.to(navButtonsAnimate[i],{duration:.03, scale: 2.01, color: '#F5F5F5', transformOrigin: '50% 50%', ease: "elastic", background: "#E3BCBA"},"burger")
+                    gsap.to(navButtonsAnimate[i],{duration:.03, scale:1.7, color: '#F5F5F5', transformOrigin: '50% 50%', ease: "elastic", background: "#E3BCBA"},"burger")
                 })
        
                 link.addEventListener("mouseleave", ()=>{

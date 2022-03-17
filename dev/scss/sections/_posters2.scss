@@ -114,14 +114,17 @@
                    
                         img{
                             width: 90vw;
-                            padding: 16px;
+                            padding-top: 40px;
+                            padding-bottom: 16px;
+                            padding-left: 10px;
+                            padding-right: 10px;
     
                             @include md{
                                 width: 40vw;
                             }
 
                             @include xl{
-                                width: 500px;
+                                width: 800px;
                             }
     
                             
